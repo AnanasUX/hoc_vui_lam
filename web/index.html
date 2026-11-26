@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Học Thông Minh – Kho công cụ học liệu miễn phí cho thầy cô và phụ huynh</title>
+  <meta name="description" content="Hơn 60 công cụ tạo phiếu bài tập, tập viết chữ, trộn đề trắc nghiệm, quản lý lớp học và tiện ích in A4 miễn phí, chạy trực tiếp trên trình duyệt." />
+  <link rel="stylesheet" href="fonts/fonts.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="drawer" id="menuDrawer" aria-label="Danh mục công cụ">
+    <div class="drawer-head">
+      <strong style="font-size:1.05rem;">Danh mục học liệu</strong>
+      <button class="icon-btn" id="closeDrawerBtn" title="Đóng menu">✕</button>
+    </div>
+    <div class="drawer-section">
+      <h4>Theo khối lớp</h4>
+      <div id="drawerGrades"></div>
+    </div>
+    <div class="drawer-section">
+      <h4>Theo nhóm công cụ</h4>
+      <div id="drawerGroups"></div>
+    </div>
+  </aside>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="header-left">
+        <button class="icon-btn" id="openDrawerBtn" title="Mở danh mục (Menu)">☰</button>
+        <a class="brand" href="index.html">
+          <span class="brand-badge">HT</span>
+          <span>Học Thông Minh</span>
+        </a>
+      </div>
+
+      <nav class="grade-nav" id="gradeNav" aria-label="Lọc theo khối lớp">
+        <button class="grade-btn active" data-grade="all">Tất cả</button>
+        <button class="grade-btn" data-grade="lop-1">Lớp 1</button>
+        <button class="grade-btn" data-grade="lop-2">Lớp 2</button>
+        <button class="grade-btn" data-grade="lop-3">Lớp 3</button>
+        <button class="grade-btn" data-grade="lop-4">Lớp 4</button>
+        <button class="grade-btn" data-grade="lop-5">Lớp 5</button>
+        <button class="grade-btn" data-grade="thcs-thpt">THCS, THPT</button>
+      </nav>
+
+      <div style="display:flex;align-items:center;gap:8px;">
+        <a class="btn btn-primary" href="quiz.html" style="padding:7px 13px;font-size:0.84rem;">🎯 Quiz &amp; Games</a>
+        <button class="icon-btn" id="themeToggleBtn" title="Đổi giao diện Sáng / Tối">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">✨ 60 công cụ học liệu • Chạy 100% trên trình duyệt • Chuẩn in A4</div>
+      <h1>Công cụ học liệu thông minh cho thầy cô &amp; phụ huynh</h1>
+      <p>Tạo phiếu bài tập, giấy tập viết, trộn đề trắc nghiệm, vòng quay chia nhóm, thời khóa biểu, giấy khen và xuất bản in A4 miễn phí. Không cần đăng nhập.</p>
+
+      <div class="controls-bar">
+        <div class="search-wrap">
+          <input id="searchInput" class="search-input" type="search" placeholder="Tìm công cụ (ví dụ: phiếu toán, tập viết, trộn đề, QR, ô chữ...)" />
+          <span class="search-kbd">/</span>
+        </div>
+        <div class="aud-group" id="audGroup">
+          <button class="aud-btn active" data-aud="all">Tất cả</button>
+          <button class="aud-btn" data-aud="t">Thầy cô</button>
+          <button class="aud-btn" data-aud="p">Phụ huynh</button>
+        </div>
+      </div>
+
+      <div class="chips-row" id="topicChips"></div>
+      <div class="chips-row" id="groupChips"></div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="section" id="featuredSection">
+      <div class="section-head">
+        <h2>Công cụ nổi bật</h2>
+        <span class="count-label">Dùng nhiều nhất</span>
+      </div>
+      <div class="featured-grid" id="featuredGrid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Tất cả công cụ</h2>
+        <span class="count-label" id="toolsCount">Đang tải...</span>
+      </div>
+      <div class="tools-grid" id="toolsGrid"></div>
+      <div class="center-actions">
+        <button class="btn" id="toggleExpandBtn" style="display:none;">Xem tất cả công cụ</button>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Vì sao chọn Học Thông Minh?</h2>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <h3>⚡ Chạy ngay trên trình duyệt</h3>
+          <p>Không cần cài đặt phần mềm hay tạo tài khoản. Mở là dùng ngay trên máy tính hoặc máy tính bảng.</p>
+        </div>
+        <div class="benefit-card">
+          <h3>🖨️ Chuẩn khổ giấy A4</h3>
+          <p>Các phiếu bài tập, giấy ô ly và đề kiểm tra được tối ưu để in trực tiếp hoặc lưu PDF sắc nét.</p>
+        </div>
+        <div class="benefit-card">
+          <h3>🔒 Riêng tư tuyệt đối</h3>
+          <p>Danh sách lớp, đề thi và bài tập của bạn được xử lý cục bộ ngay trên thiết bị, không gửi lên máy chủ.</p>
+        </div>
+        <div class="benefit-card">
+          <h3>📚 Đủ mọi khối lớp</h3>
+          <p>Bao phủ từ Lớp 1 đến Lớp 5 và THCS, THPT với nhiều môn: Toán, Tiếng Việt, Tiếng Anh, Âm nhạc...</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>Câu hỏi thường gặp</h2>
+      </div>
+      <div id="faqList"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>Học Thông Minh</strong> — Hệ thống học liệu tương tác &amp; phiếu bài tập miễn phí.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>

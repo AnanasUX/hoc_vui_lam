@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Công cụ – Học Thông Minh</title>
+  <link rel="stylesheet" href="fonts/fonts.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-badge">HT</span>
+        <span>Học Thông Minh</span>
+      </a>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <a class="btn" href="index.html">← 60 công cụ</a>
+        <button class="icon-btn" id="themeToggleBtn" title="Đổi giao diện Sáng / Tối">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="no-print" style="padding-top:20px;">
+      <h1 id="toolTitle" style="margin:0 0 6px;">Đang tải công cụ...</h1>
+      <p id="toolLead" style="margin:0;color:var(--muted);"></p>
+    </div>
+
+    <div class="workspace-layout">
+      <aside class="panel">
+        <h2>⚙️ Tùy chỉnh công cụ</h2>
+        <div id="controlsContainer"></div>
+        <div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap;">
+          <button class="btn btn-primary" id="printBtn" style="flex:1;">🖨️ In / Lưu PDF (A4)</button>
+          <button class="btn" id="downloadPngBtn" style="display:none;flex:1;">📥 Tải ảnh PNG</button>
+        </div>
+      </aside>
+
+      <section class="a4-sheet" id="previewArea">
+        <p style="color:var(--muted);">Đang khởi tạo bản xem trước A4...</p>
+      </section>
+    </div>
+  </main>
+
+  <div class="toast" id="toast"></div>
+  <script src="tool.js"></script>
+</body>
+</html>

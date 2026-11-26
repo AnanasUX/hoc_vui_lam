@@ -1,0 +1,160 @@
+{
+  "source_url": "https://www.culturequizz.com",
+  "title": "Culture Quizz : 1500 Quiz pour tester votre Culture Générale",
+  "description": "Répondez à plus de 20000 questions sur des quiz de Culture Générale, Histoire, Géo, Cinéma, Sciences, Sport, Animaux, etc. Nouveautés quotidiennes.",
+  "scraped_at": "2026-11-26T09:11:00Z",
+  "difficulties": [
+    "Facile (Junior)",
+    "Moyen",
+    "Difficile",
+    "Extrême"
+  ],
+  "categories_count": 0,
+  "categories": [],
+  "games_count": 28,
+  "games": [
+    {
+      "name": "Nouveau Culture G Miss France 2027",
+      "url": "https://www.culturequizz.com/quiz/quiz-culture-generale-miss-france-2027/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "name": "Nouveau Inventions et inventeurs",
+      "url": "https://www.culturequizz.com/quiz/quiz-decouvertes-portant-le-nom-de-leurs-inventeurs/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "name": "Nouveau Le Cadenas de la semaine",
+      "url": "https://www.culturequizz.com/cadenas/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "name": "Nouveau #2 Première lettre des Capitales",
+      "url": "https://www.culturequizz.com/jeux/quiz-trouvez-les-pays-selon-la-premiere-lettre-de-leur-capitale-2/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "name": "Test du Choixpeau",
+      "url": "https://www.culturequizz.com/personnalite/test-choixpeau-maison-poudlard/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "name": "Nouveau BD au Cinéma",
+      "url": "https://www.culturequizz.com/quiz/quiz-special-bandes-dessinees-au-cinema/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "name": "#3 Alimentation #3",
+      "url": "https://www.culturequizz.com/quiz/quiz-special-alimentation-3/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "name": "#44 Quiz Culture Générale Facile",
+      "url": "https://www.culturequizz.com/quiz/quiz-culture-generale-facile-44/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "name": "Montagnes en France",
+      "url": "https://www.culturequizz.com/quiz/quiz-montagnes-francaises/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "name": "Culture Quizz",
+      "url": "https://www.culturequizz.com/"
+    },
+    {
+      "name": "Quiz",
+      "url": "https://www.culturequizz.com/quiz/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "name": "Réponses en Vrac Retrouvez la bonne réponse à une question parmi des dizaines de propositions au choix.",
+      "url": "https://www.culturequizz.com/game/reponses-vrac/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "name": "Chrono Challenge Nommez tous les éléments d'une thématique avant la fin du chrono. (Ex: Tous les pays du monde...)",
+      "url": "https://www.culturequizz.com/game/chrono-challenge/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "name": "Réponses Groupées Associez les réponses aux bons groupes pour marquer le maximum de points.",
+      "url": "https://www.culturequizz.com/game/reponses-groupees/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "name": "Le Bon Ordre Remettez dans le bon ordre une liste d'éléments en un minimum de tentatives.",
+      "url": "https://www.culturequizz.com/game/bon-ordre/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "name": "Quiz en Vidéo Jouez à des quiz sous la forme de vidéos pour une expérience plus immersive idéale pour jouer à plusieurs.",
+      "url": "https://www.culturequizz.com/quiz-video/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "name": "Mot du Jour Tentez de trouver quotidiennement un mot de 6 à 8 caractères en un maximum de 6 tentatives.",
+      "url": "https://www.culturequizz.com/mot-du-jour/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "name": "Photo du Jour Chaque jour, tentez de trouver où a été prise une photographie parmi 3 propositions.",
+      "url": "https://www.culturequizz.com/photo-du-jour/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "name": "Syllamix Identifiez 5 mots à l'aide d'une définition et d'une série de syllabes.",
+      "url": "https://www.culturequizz.com/syllamix/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "name": "Cryptex Chaque jour, trouvez le mot mystère dans ce jeu inspiré du Da Vinci Code.",
+      "url": "https://www.culturequizz.com/cryptex/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "name": "Question du Jour Apprenez-en quotidiennement un peu plus avec notre question du jour de culture générale.",
+      "url": "https://www.culturequizz.com/question-du-jour/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "name": "Le Compte est Bon Chaque jour, tentez de trouver la valeur cible en effectuant une série d'opérations mathématiques.",
+      "url": "https://www.culturequizz.com/compte-est-bon/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "name": "Mot Codé du Jour Décodez un code chiffré à l'aide d'un cadran téléphonique pour obtenir le mot codé du jour.",
+      "url": "https://www.culturequizz.com/mot-code-du-jour/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "name": "Les Énigmes Tentez d'associer les indices pour trouver la solution de nos énigmes originales inspirées du Père Fouras.",
+      "url": "https://www.culturequizz.com/enigme/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "name": "Âge Master Estimez l'âge de 8 personnalités d'hier à aujourd'hui en un minimum de tentatives.",
+      "url": "https://www.culturequizz.com/age-master/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "name": "Tests Psycho Découvrez qui vous êtes vraiment en répondant à des questions pour mettre en avant votre psychologie.",
+      "url": "https://www.culturequizz.com/personnalite/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "name": "Les Battles Testez vos goûts au travers de grandes battles dans lesquelles vous devez faire des choix parfois cornéliens",
+      "url": "https://www.culturequizz.com/game/battle?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "name": "Morpion Dynamique Jouez à une version du morpion complètement inédite et plus stratégique que jamais.",
+      "url": "https://www.culturequizz.com/morpion/?is_wppwa=true&wpappninja_cache=friendly"
+    }
+  ],
+  "sample_quizzes_count": 7,
+  "sample_quizzes": [
+    {
+      "title": "Tous les Quiz",
+      "url": "https://www.culturequizz.com/quiz/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "title": "Nouveau Culture G Miss France 2027",
+      "url": "https://www.culturequizz.com/quiz/quiz-culture-generale-miss-france-2027/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "title": "Nouveau Inventions et inventeurs",
+      "url": "https://www.culturequizz.com/quiz/quiz-decouvertes-portant-le-nom-de-leurs-inventeurs/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "title": "Nouveau BD au Cinéma",
+      "url": "https://www.culturequizz.com/quiz/quiz-special-bandes-dessinees-au-cinema/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "title": "#3 Alimentation #3",
+      "url": "https://www.culturequizz.com/quiz/quiz-special-alimentation-3/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "title": "#44 Quiz Culture Générale Facile",
+      "url": "https://www.culturequizz.com/quiz/quiz-culture-generale-facile-44/?is_wppwa=true&wpappninja_cache=friendly"
+    },
+    {
+      "title": "Montagnes en France",
+      "url": "https://www.culturequizz.com/quiz/quiz-montagnes-francaises/?is_wppwa=true&wpappninja_cache=friendly"
+    }
+  ]
+}
