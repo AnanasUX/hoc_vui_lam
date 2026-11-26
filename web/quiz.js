@@ -185,36 +185,202 @@ function initThemeAndSound() {
   });
 }
 
+let allBanks = [...QUIZ_BANKS];
+let mcqFilterCat = "all";
+let mcqFilterGrade = "all";
+let mcqSearchQuery = "";
+
+async function loadDynamicBanks() {
+  try {
+    const res = await fetch("data/quiz_banks.json");
+    if (res.ok) {
+      const data = await res.json();
+      if (data && data.banks && data.banks.length) {
+        allBanks = data.banks;
+      }
+    }
+  } catch (e) {
+    console.warn("Could not load dynamic quiz banks, fallback to defaults", e);
+  }
+}
+
 /* MODE 1: MCQ QUIZ */
 function renderMcqHome(stage, autoStartQuiz = null) {
   if (autoStartQuiz) {
     startMcqQuiz(stage, autoStartQuiz);
     return;
   }
+
+  const categories = [
+    { id: "all", label: "Tất cả môn" },
+    { id: "Toán học", label: "📐 Toán học" },
+    { id: "Tiếng Việt", label: "📖 Tiếng Việt" },
+    { id: "Tiếng Anh", label: "🔤 Tiếng Anh" },
+    { id: "Khoa học", label: "🔬 Khoa học" },
+    { id: "Lịch sử & Địa lý", label: "🗺️ Lịch sử - Địa lý" },
+    { id: "Đố vui trí tuệ", label: "💡 Đố vui dân gian" },
+    { id: "Tiếng Anh & Thế giới", label: "🌍 English Trivia" },
+  ];
+
+  const grades = [
+    { id: "all", label: "Mọi khối lớp" },
+    { id: "lop-1-2", label: "Lớp 1 - 2" },
+    { id: "lop-3-5", label: "Lớp 3 - 5" },
+    { id: "thcs-thpt", label: "THCS & Thế giới" },
+  ];
+
+  // Filtering
+  const qNorm = normalize(mcqSearchQuery);
+  const filtered = allBanks.filter((b) => {
+    // Category match
+    const matchCat =
+      mcqFilterCat === "all" ||
+      b.category === mcqFilterCat ||
+      (mcqFilterCat === "Toán học" && b.category.includes("Toán")) ||
+      (mcqFilterCat === "Tiếng Anh" && b.category.includes("Tiếng Anh"));
+
+    // Grade match
+    let matchGrade = true;
+    if (mcqFilterGrade === "lop-1-2") {
+      matchGrade = ["lop-1", "lop-2"].includes(b.grade);
+    } else if (mcqFilterGrade === "lop-3-5") {
+      matchGrade = ["lop-3", "lop-4", "lop-5"].includes(b.grade);
+    } else if (mcqFilterGrade === "thcs-thpt") {
+      matchGrade = ["thcs-thpt", "all"].includes(b.grade);
+    }
+
+    // Search query match
+    const matchSearch =
+      !qNorm ||
+      normalize(b.title).includes(qNorm) ||
+      normalize(b.category).includes(qNorm) ||
+      normalize(b.grade_label || "").includes(qNorm);
+
+    return matchCat && matchGrade && matchSearch;
+  });
+
+  const totalQuestions = allBanks.reduce((s, b) => s + (b.questions ? b.questions.length : 0), 0);
+
   stage.innerHTML = `
-    <h2 style="margin-top:0;">🧠 Chọn bộ câu hỏi trắc nghiệm</h2>
-    <p style="color:var(--muted);margin-bottom:16px;">Mỗi câu trả lời đúng có giải thích chi tiết và tích lũy điểm XP thăng hạng.</p>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;">
-      ${QUIZ_BANKS.map(
-        (b) => `
-        <div style="border:1px solid var(--border);border-radius:12px;padding:16px;background:var(--surface-2);display:flex;flex-direction:column;justify-content:space-between;">
-          <div>
-            <div style="font-size:0.78rem;font-weight:700;color:var(--primary);margin-bottom:4px;">${b.category} • ${b.difficulty}</div>
-            <h3 style="margin:0 0 8px;font-size:1.02rem;">${b.title}</h3>
-            <p style="margin:0 0 12px;font-size:0.86rem;color:var(--muted);">${b.questions.length} câu hỏi có giải thích</p>
-          </div>
-          <button class="btn btn-primary start-quiz-btn" data-id="${b.id}">Bắt đầu Quiz →</button>
-        </div>`
-      ).join("")}
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px;">
+      <div>
+        <h2 style="margin:0 0 4px;">🧠 Đấu trường Trắc nghiệm Tri thức</h2>
+        <p style="color:var(--muted);margin:0;font-size:0.9rem;">
+          ${allBanks.length} ngân hàng câu hỏi • ${totalQuestions} câu trắc nghiệm chuẩn chương trình &amp; quốc tế
+        </p>
+      </div>
+      <button class="btn btn-primary" id="quickMixBtn" style="background:linear-gradient(135deg,#6366f1,#06b6d4);">
+        ⚡ Đấu trường Trộn Đề 10 câu
+      </button>
     </div>
+
+    <div style="margin-bottom:14px;">
+      <input type="search" id="mcqSearchInput" class="search-input" style="width:100%;max-width:480px;padding:9px 14px;border-radius:10px;border:1.5px solid var(--border);background:var(--surface-2);color:var(--text);" placeholder="🔍 Tìm kiếm bài học (ví dụ: Phân số, Lớp 1, Lịch sử, Science...)" value="${escapeHtml(mcqSearchQuery)}" />
+    </div>
+
+    <!-- Category Filter Chips -->
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px;">
+      ${categories.map((c) => `<button class="chip mcq-cat-chip ${mcqFilterCat === c.id ? "active" : ""}" data-cat="${c.id}">${c.label}</button>`).join("")}
+    </div>
+
+    <!-- Grade Filter Chips -->
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px;">
+      ${grades.map((g) => `<button class="chip mcq-grade-chip ${mcqFilterGrade === g.id ? "active" : ""}" data-grade="${g.id}">${g.label}</button>`).join("")}
+    </div>
+
+    ${
+      filtered.length === 0
+        ? `<div style="text-align:center;padding:36px;color:var(--muted);">
+            <div style="font-size:2.5rem;">🔍</div>
+            <p>Không tìm thấy bộ câu hỏi nào phù hợp với bộ lọc hiện tại.</p>
+            <button class="btn" id="resetMcqFilterBtn">Đặt lại bộ lọc</button>
+          </div>`
+        : `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px;">
+            ${filtered
+              .map(
+                (b) => `
+              <div style="border:1px solid var(--border);border-radius:14px;padding:16px;background:var(--surface-2);display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 2px 4px rgba(0,0,0,0.03);">
+                <div>
+                  <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;margin-bottom:6px;">
+                    <span style="font-size:0.75rem;font-weight:700;padding:2px 8px;border-radius:999px;background:var(--primary-soft);color:var(--primary);">${escapeHtml(b.category)}</span>
+                    <span style="font-size:0.75rem;color:var(--muted);">${escapeHtml(b.grade_label || b.difficulty || "")}</span>
+                  </div>
+                  <h3 style="margin:0 0 8px;font-size:1.02rem;line-height:1.4;">${escapeHtml(b.title)}</h3>
+                  <p style="margin:0 0 14px;font-size:0.86rem;color:var(--muted);">
+                    📝 <strong>${b.questions.length} câu hỏi</strong> • Độ khó: <strong>${escapeHtml(b.difficulty)}</strong>
+                  </p>
+                </div>
+                <button class="btn btn-primary start-quiz-btn" data-id="${b.id}" style="width:100%;">Luyện tập ngay →</button>
+              </div>`
+              )
+              .join("")}
+          </div>`
+    }
   `;
+
+  // Bind Events
+  const searchInput = stage.querySelector("#mcqSearchInput");
+  if (searchInput) {
+    searchInput.addEventListener("input", (e) => {
+      mcqSearchQuery = e.target.value;
+      renderMcqHome(stage);
+    });
+  }
+
+  stage.querySelectorAll(".mcq-cat-chip").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      mcqFilterCat = btn.dataset.cat;
+      renderMcqHome(stage);
+    });
+  });
+
+  stage.querySelectorAll(".mcq-grade-chip").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      mcqFilterGrade = btn.dataset.grade;
+      renderMcqHome(stage);
+    });
+  });
+
+  const resetBtn = stage.querySelector("#resetMcqFilterBtn");
+  if (resetBtn) {
+    resetBtn.addEventListener("click", () => {
+      mcqFilterCat = "all";
+      mcqFilterGrade = "all";
+      mcqSearchQuery = "";
+      renderMcqHome(stage);
+    });
+  }
+
+  const quickMixBtn = stage.querySelector("#quickMixBtn");
+  if (quickMixBtn) {
+    quickMixBtn.addEventListener("click", () => {
+      // Gather pool of all questions
+      const pool = [];
+      allBanks.forEach((b) => {
+        (b.questions || []).forEach((q) => pool.push({ ...q, bankTitle: b.title }));
+      });
+      // Pick 10 random
+      const shuffledPool = [...pool].sort(() => 0.5 - Math.random()).slice(0, 10);
+      const mixedBank = {
+        id: "quick-mix-exam",
+        title: "⚡ Đấu Trường Tổng Hợp 10 Câu",
+        category: "Đấu trường Đa môn",
+        difficulty: "Tổng hợp",
+        questions: shuffledPool,
+      };
+      startMcqQuiz(stage, mixedBank);
+      showToast("⚡ Đã khởi tạo Đấu trường Tổng hợp 10 câu!");
+    });
+  }
+
   stage.querySelectorAll(".start-quiz-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
-      const bank = QUIZ_BANKS.find((b) => b.id === btn.dataset.id);
+      const bank = allBanks.find((b) => b.id === btn.dataset.id);
       if (bank) startMcqQuiz(stage, bank);
     });
   });
 }
+
 
 function startMcqQuiz(stage, bank) {
   let idx = 0;
@@ -501,12 +667,14 @@ function renderDaily(stage) {
   });
 }
 
-function init() {
+async function init() {
   initThemeAndSound();
   renderHud();
 
   const stage = document.getElementById("quizStage");
   const tabs = document.querySelectorAll("#modeTabs .chip");
+
+  await loadDynamicBanks();
 
   function switchMode(mode) {
     tabs.forEach((t) => t.classList.toggle("active", t.dataset.mode === mode));
@@ -519,7 +687,7 @@ function init() {
   tabs.forEach((t) => t.addEventListener("click", () => switchMode(t.dataset.mode)));
 
   document.getElementById("randomQuizBtn").addEventListener("click", () => {
-    const bank = QUIZ_BANKS[Math.floor(Math.random() * QUIZ_BANKS.length)];
+    const bank = allBanks[Math.floor(Math.random() * allBanks.length)];
     tabs.forEach((t) => t.classList.toggle("active", t.dataset.mode === "mcq"));
     renderMcqHome(stage, bank);
     showToast(`🎲 Đã chọn: ${bank.title}`);
@@ -529,3 +697,4 @@ function init() {
 }
 
 init();
+

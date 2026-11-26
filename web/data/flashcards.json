@@ -1,0 +1,262 @@
+{
+  "flashcards": [
+    {
+      "category": "Động vật (Animals)",
+      "items": [
+        {
+          "term": "Dog",
+          "meaning": "Con chó",
+          "phonetic": "/dɒɡ/",
+          "example": "The dog is barking happily."
+        },
+        {
+          "term": "Cat",
+          "meaning": "Con mèo",
+          "phonetic": "/kæt/",
+          "example": "My cat likes sleeping on the sofa."
+        },
+        {
+          "term": "Elephant",
+          "meaning": "Con voi",
+          "phonetic": "/ˈel.ɪ.fənt/",
+          "example": "The elephant has a long trunk."
+        },
+        {
+          "term": "Dolphin",
+          "meaning": "Cá heo",
+          "phonetic": "/ˈdɒl.fɪn/",
+          "example": "Dolphins are very intelligent animals."
+        },
+        {
+          "term": "Tiger",
+          "meaning": "Con hổ",
+          "phonetic": "/ˈtaɪ.ɡər/",
+          "example": "The tiger lives in the jungle."
+        },
+        {
+          "term": "Bird",
+          "meaning": "Con chim",
+          "phonetic": "/bɜːd/",
+          "example": "The bird is singing in the tree."
+        },
+        {
+          "term": "Lion",
+          "meaning": "Sư tử",
+          "phonetic": "/ˈlaɪ.ən/",
+          "example": "The lion is the king of the beasts."
+        },
+        {
+          "term": "Monkey",
+          "meaning": "Con khỉ",
+          "phonetic": "/ˈmʌŋ.ki/",
+          "example": "The monkey loves eating bananas."
+        }
+      ]
+    },
+    {
+      "category": "Đồ dùng học tập (School Supplies)",
+      "items": [
+        {
+          "term": "Pencil",
+          "meaning": "Bút chì",
+          "phonetic": "/ˈpen.səl/",
+          "example": "I sharpen my pencil before class."
+        },
+        {
+          "term": "Eraser",
+          "meaning": "Cục tẩy / gôm",
+          "phonetic": "/ɪˈreɪ.zər/",
+          "example": "Use the eraser to fix mistakes."
+        },
+        {
+          "term": "Ruler",
+          "meaning": "Cây thước kẻ",
+          "phonetic": "/ˈruː.lər/",
+          "example": "Draw a straight line with a ruler."
+        },
+        {
+          "term": "Backpack",
+          "meaning": "Cặp sách / Ba lô",
+          "phonetic": "/ˈbæk.pæk/",
+          "example": "My backpack is full of books."
+        },
+        {
+          "term": "Notebook",
+          "meaning": "Vở ghi chép",
+          "phonetic": "/ˈnəʊt.bʊk/",
+          "example": "Write your homework in this notebook."
+        },
+        {
+          "term": "Scissors",
+          "meaning": "Cái kéo",
+          "phonetic": "/ˈsɪz.əz/",
+          "example": "Be careful when using scissors."
+        }
+      ]
+    },
+    {
+      "category": "Gia đình & Người thân (Family)",
+      "items": [
+        {
+          "term": "Grandfather",
+          "meaning": "Ông",
+          "phonetic": "/ˈɡræn.fɑː.ðər/",
+          "example": "My grandfather loves gardening."
+        },
+        {
+          "term": "Grandmother",
+          "meaning": "Bà",
+          "phonetic": "/ˈɡræn.mʌð.ər/",
+          "example": "My grandmother tells great stories."
+        },
+        {
+          "term": "Father",
+          "meaning": "Bố / Cha",
+          "phonetic": "/ˈfɑː.ðər/",
+          "example": "My father is a doctor."
+        },
+        {
+          "term": "Mother",
+          "meaning": "Mẹ",
+          "phonetic": "/ˈmʌð.ər/",
+          "example": "My mother cooks delicious meals."
+        },
+        {
+          "term": "Brother",
+          "meaning": "Anh / Em trai",
+          "phonetic": "/ˈbrʌð.ər/",
+          "example": "I play soccer with my brother."
+        },
+        {
+          "term": "Sister",
+          "meaning": "Chị / Em gái",
+          "phonetic": "/ˈsɪs.tər/",
+          "example": "My sister is very kind."
+        }
+      ]
+    },
+    {
+      "category": "Trái cây & Rau củ (Fruits & Vegetables)",
+      "items": [
+        {
+          "term": "Apple",
+          "meaning": "Quả táo",
+          "phonetic": "/ˈæp.əl/",
+          "example": "An apple a day keeps the doctor away."
+        },
+        {
+          "term": "Banana",
+          "meaning": "Quả chuối",
+          "phonetic": "/bəˈnɑː.nə/",
+          "example": "Monkeys love ripe bananas."
+        },
+        {
+          "term": "Orange",
+          "meaning": "Quả cam",
+          "phonetic": "/ˈɒr.ɪndʒ/",
+          "example": "Fresh orange juice is rich in Vitamin C."
+        },
+        {
+          "term": "Watermelon",
+          "meaning": "Dưa hấu",
+          "phonetic": "/ˈwɔː.təˌmel.ən/",
+          "example": "Watermelon is so sweet in the summer."
+        },
+        {
+          "term": "Carrot",
+          "meaning": "Củ cà rốt",
+          "phonetic": "/ˈkær.ət/",
+          "example": "Rabbits like crunchy carrots."
+        },
+        {
+          "term": "Tomato",
+          "meaning": "Quả cà chua",
+          "phonetic": "/təˈmɑː.təʊ/",
+          "example": "Tomatoes make great salads."
+        }
+      ]
+    },
+    {
+      "category": "Nghề nghiệp phổ biến (Jobs & Occupations)",
+      "items": [
+        {
+          "term": "Teacher",
+          "meaning": "Giáo viên",
+          "phonetic": "/ˈtiː.tʃər/",
+          "example": "Our teacher is very dedicated."
+        },
+        {
+          "term": "Doctor",
+          "meaning": "Bác sĩ",
+          "phonetic": "/ˈdɒk.tər/",
+          "example": "The doctor examines the patient carefully."
+        },
+        {
+          "term": "Engineer",
+          "meaning": "Kỹ sư",
+          "phonetic": "/ˌen.dʒɪˈnɪər/",
+          "example": "Engineers design strong bridges."
+        },
+        {
+          "term": "Police Officer",
+          "meaning": "Cảnh sát",
+          "phonetic": "/pəˈliːs ˌɒf.ɪ.sər/",
+          "example": "Police officers keep our streets safe."
+        },
+        {
+          "term": "Farmer",
+          "meaning": "Nông dân",
+          "phonetic": "/ˈfɑː.mər/",
+          "example": "Farmers grow organic vegetables."
+        },
+        {
+          "term": "Pilot",
+          "meaning": "Phi công",
+          "phonetic": "/ˈpaɪ.lət/",
+          "example": "The pilot flies airplanes safely."
+        }
+      ]
+    },
+    {
+      "category": "Màu sắc & Hình khối (Colors & Shapes)",
+      "items": [
+        {
+          "term": "Red",
+          "meaning": "Màu đỏ",
+          "phonetic": "/red/",
+          "example": "The rose is bright red."
+        },
+        {
+          "term": "Blue",
+          "meaning": "Màu xanh dương",
+          "phonetic": "/bluː/",
+          "example": "The sky is clear and blue."
+        },
+        {
+          "term": "Green",
+          "meaning": "Màu xanh lá cây",
+          "phonetic": "/ɡriːn/",
+          "example": "Spring leaves are vibrant green."
+        },
+        {
+          "term": "Yellow",
+          "meaning": "Màu vàng",
+          "phonetic": "/ˈjel.əʊ/",
+          "example": "The sun shines in bright yellow."
+        },
+        {
+          "term": "Circle",
+          "meaning": "Hình tròn",
+          "phonetic": "/ˈsɜː.kəl/",
+          "example": "A clock has a circle shape."
+        },
+        {
+          "term": "Square",
+          "meaning": "Hình vuông",
+          "phonetic": "/skweər/",
+          "example": "The gift box is a perfect square."
+        }
+      ]
+    }
+  ]
+}

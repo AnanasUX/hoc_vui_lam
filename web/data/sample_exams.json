@@ -1,0 +1,36 @@
+{
+  "sample_exams": [
+    {
+      "id": "exam-toan-lop4",
+      "title": "Đề Khảo sát Toán Lớp 4 (Học kỳ 1)",
+      "grade": "Lớp 4",
+      "subject": "Toán",
+      "duration": "40 phút",
+      "content": "Câu 1: Số gồm 5 triệu, 7 trăm nghìn, 2 chục và 4 đơn vị viết là:\nA. 5 700 024\nB. 5 070 024\nC. 5 702 004\nD. 5 720 004\n\nCâu 2: Giá trị của chữ số 8 trong số 485 203 là:\nA. 800\nB. 8 000\nC. 80 000\nD. 800 000\n\nCâu 3: Số thích hợp để điền vào chỗ chấm: 3 tấn 25 kg = ... kg\nA. 325 kg\nB. 3 025 kg\nC. 3 250 kg\nD. 30 025 kg\n\nCâu 4: Một hình chữ nhật có chu vi là 48 cm, chiều dài hơn chiều rộng 4 cm. Diện tích hình chữ nhật là:\nA. 140 cm²\nB. 144 cm²\nC. 192 cm²\nD. 240 cm²\n\nCâu 5: Trung bình cộng của các số 45, 55, 65, 75 là:\nA. 50\nB. 55\nC. 60\nD. 65"
+    },
+    {
+      "id": "exam-tiengviet-lop3",
+      "title": "Đề Ôn tập Tiếng Việt Lớp 3 (Luyện từ và câu)",
+      "grade": "Lớp 3",
+      "subject": "Tiếng Việt",
+      "duration": "35 phút",
+      "content": "Câu 1: Câu nào dưới đây có hình ảnh so sánh?\nA. Tiếng suối trong như tiếng hát xa.\nB. Mặt trời tỏa ánh nắng chói chang khắp cánh đồng.\nC. Mẹ đang cặm cụi nấu bữa cơm tối.\nD. Chúng em vui vẻ cắp sách đến trường.\n\nCâu 2: Từ nào dưới đây viết đúng chính tả?\nA. Sắp xếp\nB. Sắp sếp\nC. Xắp xếp\nD. Xắp sếp\n\nCâu 3: Trong câu \"Bác kim giờ thận trọng bước từng bước một\", bộ phận nào được nhân hóa?\nA. Bác\nB. Kim giờ\nC. Từng bước\nD. Đồng hồ\n\nCâu 4: Dấu câu thích hợp điền vào cuối câu: \"Ôi, cảnh bình minh trên biển đẹp quá [...]\"\nA. Dấu chấm (.)\nB. Dấu hỏi chấm (?)\nC. Dấu chấm than (!)\nD. Dấu phẩy (,)"
+    },
+    {
+      "id": "exam-english-lop5",
+      "title": "Đề Khảo sát Tiếng Anh Lớp 5 (Học kỳ 1)",
+      "grade": "Lớp 5",
+      "subject": "Tiếng Anh",
+      "duration": "35 phút",
+      "content": "Câu 1: What did you do yesterday?\nA. I play badminton with my friends.\nB. I played badminton with my friends.\nC. I am playing badminton with my friends.\nD. I will play badminton with my friends.\n\nCâu 2: Where will you go this summer vacation?\nA. I go to Ha Long Bay.\nB. I went to Ha Long Bay.\nC. I think I'll go to Ha Long Bay.\nD. I goes to Ha Long Bay.\n\nCâu 3: How often do you brush your teeth?\nA. Twice a day.\nB. Yes, I do.\nC. Two times day.\nD. At 7 o'clock.\n\nCâu 4: Choose the odd one out:\nA. Elephant\nB. Giraffe\nC. Kangaroo\nD. Notebook"
+    },
+    {
+      "id": "exam-khoahoc-lichsu",
+      "title": "Đề Ôn tập Khoa học & Lịch sử Địa lý Lớp 4-5",
+      "grade": "Lớp 4 - 5",
+      "subject": "Khoa học & Lịch sử",
+      "duration": "30 phút",
+      "content": "Câu 1: Không khí bao gồm hai thành phần khí chính là:\nA. Oxy và Khí cacbonic\nB. Oxy và Khí Nitơ\nC. Khí Nitơ và Khí Hidro\nD. Khí Nitơ và Bụi bẩn\n\nCâu 2: Thành phố nào dưới đây là trung tâm kinh tế lớn nhất cả nước?\nA. Hà Nội\nB. Đà Nẵng\nC. Thành phố Hồ Chí Minh\nD. Cần Thơ\n\nCâu 3: Ai là người chỉ huy cuộc kháng chiến chống quân xâm lược Nam Hán trên sông Bạch Đằng năm 938?\nA. Ngô Quyền\nB. Đinh Bộ Lĩnh\nC. Lê Hoàn\nD. Trần Hưng Đạo\n\nCâu 4: Nguồn năng lượng nào dưới đây là năng lượng sạch, có thể tái tạo?\nA. Than đá\nB. Dầu mỏ\nC. Năng lượng mặt trời và gió\nD. Khí đốt tự nhiên"
+    }
+  ]
+}

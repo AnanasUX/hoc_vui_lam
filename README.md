@@ -9,11 +9,15 @@ Hệ thống công cụ học liệu tương tác & đấu trường Quiz / Mini
   - `quiz.html`, `quiz.js`: Đấu trường Trắc nghiệm theo chủ đề & độ khó, Thử thách Thời gian (Chrono Challenge), Tính Nhanh (Le Compte est Bon), Câu hỏi mỗi ngày & hệ thống XP thăng hạng.
 - `scraper.py` — Script Python cào dữ liệu & tài nguyên từ `hoclieu.app`.
 - `scrape_culturequizz.py` — Script Python cào cấu trúc & chế độ chơi từ `culturequizz.com`.
-- `build_site_data.py` — Script chuyển đổi dữ liệu sang `web/data/tools.json`.
-- `scraped_data/` — Dữ liệu JSON/CSV và tài nguyên đã cào.
+- `scrape_opentdb.py` — Script cào ngân hàng câu hỏi kiến thức song ngữ & quốc tế từ Open Trivia DB API.
+- `scrape_vn_education.py` — Script tạo lập & thu thập kho học liệu chuẩn SGK Việt Nam (Toán 1-5, Tiếng Việt, Tiếng Anh, Đố vui dân gian, Thẻ Flashcards, Đề thi mẫu).
+- `enrich_platform.py` — Script chuẩn hóa & tích hợp toàn bộ dữ liệu vào `web/data/`.
+- `build_site_data.py` — Script chuyển đổi dữ liệu công cụ sang `web/data/tools.json`.
+- `scraped_data/` — Dữ liệu JSON/CSV và tài nguyên đã cào (`hoclieu_data.json`, `opentdb_data.json`, `vn_curriculum_data.json`, `culturequizz_data.json`).
 
 ## Chạy cục bộ
 ```bash
 python -m http.server 8765 --directory web
 ```
 Mở trình duyệt tại `http://localhost:8765/`.
+

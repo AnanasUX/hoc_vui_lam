@@ -1,0 +1,1334 @@
+{
+  "source": "https://opentdb.com",
+  "description": "Bộ câu hỏi kiến thức song ngữ & quốc tế từ Open Trivia Database",
+  "total_banks": 6,
+  "total_questions": 90,
+  "banks": [
+    {
+      "id": "opentdb-science",
+      "title": "English Trivia: Khoa học & Tự nhiên (Science & Nature)",
+      "category": "Tiếng Anh & Thế giới",
+      "sub_category": "Khoa học & Tự nhiên (Science & Nature)",
+      "grade": "thcs-thpt",
+      "grade_label": "THCS, THPT & Đại chúng",
+      "difficulty": "Đa cấp độ",
+      "questions": [
+        {
+          "q": "How many officially recognized dwarf planets in the solar system are named after Polynesian deities?",
+          "opts": [
+            "0",
+            "1",
+            "2",
+            "5"
+          ],
+          "ans": 2,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: 2.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the hottest planet in the solar system",
+          "opts": [
+            "Mars",
+            "Jupiter",
+            "Mercury ",
+            "Venus"
+          ],
+          "ans": 3,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Venus.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "In Psychology, which need appears highest in the \"Maslow's hierarchy of needs\" pyramid?",
+          "opts": [
+            "Love",
+            "Physiological",
+            "Esteem",
+            "Safety"
+          ],
+          "ans": 2,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Esteem.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "How many moons does the Earth have?",
+          "opts": [
+            "3",
+            "2",
+            "0",
+            "1"
+          ],
+          "ans": 3,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: 1.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which of the following plastic is commonly used for window frames, gutters and drain pipes?",
+          "opts": [
+            "Polystyrene (PS)",
+            "Polyethylene (PE)",
+            "Polypropylene (PP)",
+            "Polyvinylchloride (PVC) "
+          ],
+          "ans": 3,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: Polyvinylchloride (PVC) .",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "The moons, Miranda, Ariel, Umbriel, Titania and Oberon orbit which planet?",
+          "opts": [
+            "Uranus",
+            "Venus",
+            "Jupiter",
+            "Neptune"
+          ],
+          "ans": 0,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Uranus.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the \"powerhouse\" of the Eukaryotic animal cell?",
+          "opts": [
+            "Chloroplast",
+            "Endoplasmic Reticulum",
+            "Nucleus",
+            "Mitochondria"
+          ],
+          "ans": 3,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Mitochondria.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "To the nearest minute, how long does it take for light to travel from the Sun to the Earth?",
+          "opts": [
+            "2 Minutes",
+            "6 Minutes",
+            "12 Minutes",
+            "8 Minutes"
+          ],
+          "ans": 3,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: 8 Minutes.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What are human nails made of?",
+          "opts": [
+            "Calcium",
+            "Chitin",
+            "Keratin",
+            "Bone"
+          ],
+          "ans": 2,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Keratin.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "How old is the universe?",
+          "opts": [
+            "13.8 Billion Years",
+            "16.2 Billion Years",
+            "7.9 Billion Years",
+            "4.5 Billion Years"
+          ],
+          "ans": 0,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: 13.8 Billion Years.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "The Western Lowland Gorilla is scientifically know as?",
+          "opts": [
+            "Gorilla Beringei Graueri",
+            "Gorilla Gorilla Gorilla",
+            "Gorilla Beringei Beringei",
+            "Gorilla Gorilla Diehli"
+          ],
+          "ans": 1,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: Gorilla Gorilla Gorilla.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which scientific unit is named after an Italian nobleman?",
+          "opts": [
+            "Pascal",
+            "Ohm",
+            "Hertz",
+            "Volt"
+          ],
+          "ans": 3,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: Volt.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What do you study if you are studying entomology?",
+          "opts": [
+            "Fish",
+            "Humans",
+            "the Brain",
+            "Insects"
+          ],
+          "ans": 3,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Insects.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which of the following bones is not in the leg?",
+          "opts": [
+            "Fibula ",
+            "Tibia",
+            "Patella",
+            "Radius"
+          ],
+          "ans": 3,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Radius.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "An organic compound is considered an alcohol if it has what functional group?",
+          "opts": [
+            "Hydroxyl",
+            "Carbonyl",
+            "Aldehyde",
+            "Alkyl"
+          ],
+          "ans": 0,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: Hydroxyl.",
+          "source": "Open Trivia DB"
+        }
+      ]
+    },
+    {
+      "id": "opentdb-math",
+      "title": "English Trivia: Toán học & Logic (Mathematics)",
+      "category": "Tiếng Anh & Thế giới",
+      "sub_category": "Toán học & Logic (Mathematics)",
+      "grade": "thcs-thpt",
+      "grade_label": "THCS, THPT & Đại chúng",
+      "difficulty": "Đa cấp độ",
+      "questions": [
+        {
+          "q": "Which of the following mathematicians made major contributions to game theory?",
+          "opts": [
+            "Leonhard Euler",
+            "Carl Friedrich Gauss",
+            "John Von Neumann",
+            "Stefan Banach"
+          ],
+          "ans": 2,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: John Von Neumann.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which of these numbers is closest to the total number of possible states for an army standard Enigma Machine?",
+          "opts": [
+            "1.58 x 10^24",
+            "1.58 x  10^18",
+            "1.58 x 10^22",
+            "1.58 x 10^20"
+          ],
+          "ans": 3,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: 1.58 x 10^20.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "At what temperature does temp in °C equal temp in °F?",
+          "opts": [
+            "+100",
+            "0",
+            "-40",
+            "+40"
+          ],
+          "ans": 2,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: -40.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the plane curve proposed by Descartes to challenge Fermat's extremum-finding techniques called?",
+          "opts": [
+            "Elliptic Paraboloid of Descartes",
+            "Descarte's Helicoid",
+            "Cartesian Coordinates",
+            "Folium of Descartes"
+          ],
+          "ans": 3,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: Folium of Descartes.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "In Roman Numerals, what does XL equate to?",
+          "opts": [
+            "40",
+            "60",
+            "15",
+            "90"
+          ],
+          "ans": 0,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: 40.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which of the following dice is not a platonic solid?",
+          "opts": [
+            "20-sided die",
+            "10-sided die",
+            "8-sided die",
+            "12-sided die"
+          ],
+          "ans": 1,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: 10-sided die.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the approximate value of mathematical constant e?",
+          "opts": [
+            "1.62",
+            "3.14",
+            "1.41",
+            "2.72"
+          ],
+          "ans": 3,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: 2.72.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the symbol for Displacement?",
+          "opts": [
+            "Dp",
+            "Δr",
+            "r",
+            "dr"
+          ],
+          "ans": 1,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Δr.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the alphanumeric representation of the imaginary number?",
+          "opts": [
+            "x",
+            "e",
+            "n",
+            "i"
+          ],
+          "ans": 3,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: i.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the least number of sides a polygon can have?",
+          "opts": [
+            "7",
+            "2",
+            "1",
+            "3"
+          ],
+          "ans": 3,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: 3.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "How many sides does a pentagon have?",
+          "opts": [
+            "6",
+            "9",
+            "5",
+            "4"
+          ],
+          "ans": 2,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: 5.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What's the square root of 49?",
+          "opts": [
+            "7",
+            "4",
+            "12",
+            "9"
+          ],
+          "ans": 0,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: 7.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the correct order of operations for solving equations?",
+          "opts": [
+            "The order in which the operations are written.",
+            "Parentheses, Exponents, Addition, Substraction, Multiplication, Division",
+            "Parentheses, Exponents, Multiplication, Division, Addition, Subtraction",
+            "Addition, Multiplication, Division, Subtraction, Addition, Parentheses"
+          ],
+          "ans": 2,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Parentheses, Exponents, Multiplication, Division, Addition, Subtraction.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "How many sides does a heptagon have?",
+          "opts": [
+            "7",
+            "5",
+            "8",
+            "6"
+          ],
+          "ans": 0,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: 7.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is a polygon with eight sides called?",
+          "opts": [
+            "Nanagon",
+            "Heptagon",
+            "Hexagon",
+            "Octagon"
+          ],
+          "ans": 3,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Octagon.",
+          "source": "Open Trivia DB"
+        }
+      ]
+    },
+    {
+      "id": "opentdb-geography",
+      "title": "English Trivia: Địa lý Thế giới (Geography)",
+      "category": "Tiếng Anh & Thế giới",
+      "sub_category": "Địa lý Thế giới (Geography)",
+      "grade": "thcs-thpt",
+      "grade_label": "THCS, THPT & Đại chúng",
+      "difficulty": "Đa cấp độ",
+      "questions": [
+        {
+          "q": "What tiny principality lies between Spain and France?",
+          "opts": [
+            "Monaco",
+            "San Marino",
+            "Andorra",
+            "Liechtenstein"
+          ],
+          "ans": 2,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Andorra.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "How tall is One World Trade Center in New York City?",
+          "opts": [
+            "1,960 ft",
+            "1,225 ft",
+            "1,888 ft",
+            "1,776 ft"
+          ],
+          "ans": 3,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: 1,776 ft.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the capital of Seychelles?",
+          "opts": [
+            "Luanda",
+            "Tripoli",
+            "N'Djamena",
+            "Victoria"
+          ],
+          "ans": 3,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Victoria.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "The Japanese district Akihabara is also known by what nickname?",
+          "opts": [
+            "Moon Walk River",
+            "Big Eyes",
+            "Otaku Central ",
+            "Electric Town"
+          ],
+          "ans": 3,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Electric Town.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "How many time zones are in Russia?",
+          "opts": [
+            "11",
+            "5",
+            "8",
+            "2"
+          ],
+          "ans": 0,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: 11.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the longest river in Europe?",
+          "opts": [
+            "Volga",
+            "Rhine",
+            "Danube",
+            "Thames"
+          ],
+          "ans": 0,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Volga.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which of the following Arab countries does NOT have a flag containing only Pan-Arab colours?",
+          "opts": [
+            "United Arab Emirates",
+            "Kuwait",
+            "Qatar",
+            "Jordan"
+          ],
+          "ans": 2,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Qatar.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "The Principality of Sealand is an unrecognized micronation off the coast of what country?",
+          "opts": [
+            "Austrailia",
+            "Argentina",
+            "Japan",
+            "The United Kingdom"
+          ],
+          "ans": 3,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: The United Kingdom.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which European city is known as the \"City of Light\"?",
+          "opts": [
+            "London",
+            "Madrid",
+            "Rome",
+            "Paris"
+          ],
+          "ans": 3,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Paris.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Bridgetown is the capital of which island country in the Carribean?",
+          "opts": [
+            "Barbados",
+            "Cuba",
+            "Dominica",
+            "Jamaica‎"
+          ],
+          "ans": 0,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Barbados.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the region conjoining Pakistan, India, and China with unknown leadership called?",
+          "opts": [
+            "Quin",
+            "Gibraltar",
+            "Andorra",
+            "Kashmir"
+          ],
+          "ans": 3,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Kashmir.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which of these is NOT an Australian state or territory?",
+          "opts": [
+            "Queensland",
+            "Alberta",
+            "Victoria",
+            "New South Wales"
+          ],
+          "ans": 1,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Alberta.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "About how many countries are there in the world?",
+          "opts": [
+            "200",
+            "300",
+            "100",
+            "500"
+          ],
+          "ans": 0,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: 200.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is Russia's second-largest city?",
+          "opts": [
+            "Saint Petersburg",
+            "Minsk",
+            "Nizhny Novgorod",
+            "Vladivostok"
+          ],
+          "ans": 0,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Saint Petersburg.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which of these African countries displays a gun on their flag?",
+          "opts": [
+            "Mozambique",
+            "Nigeria",
+            "Ethiopia",
+            "Uganda"
+          ],
+          "ans": 0,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: Mozambique.",
+          "source": "Open Trivia DB"
+        }
+      ]
+    },
+    {
+      "id": "opentdb-history",
+      "title": "English Trivia: Lịch sử Thế giới (History)",
+      "category": "Tiếng Anh & Thế giới",
+      "sub_category": "Lịch sử Thế giới (History)",
+      "grade": "thcs-thpt",
+      "grade_label": "THCS, THPT & Đại chúng",
+      "difficulty": "Đa cấp độ",
+      "questions": [
+        {
+          "q": "Who discovered Penicillin?",
+          "opts": [
+            "Alfred Nobel",
+            "Marie Curie",
+            "Louis Pasteur",
+            "Alexander Flemming"
+          ],
+          "ans": 3,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Alexander Flemming.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "The crown of the Empire State Building was originally built for what purpose?",
+          "opts": [
+            "Flag Pole",
+            "Antennae",
+            "Airship Dock",
+            "Lightning Rod"
+          ],
+          "ans": 2,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Airship Dock.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "In which war did the atomic bombings of Hiroshima and Nagasaki occur?",
+          "opts": [
+            "First Sino-Japanese War",
+            "Russo-Japanese War",
+            "World War II",
+            "World War I"
+          ],
+          "ans": 2,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: World War II.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "In which year did the Tokyo Subway Sarin Attack occur?",
+          "opts": [
+            "2011",
+            "1991",
+            "2001",
+            "1995"
+          ],
+          "ans": 3,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: 1995.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which of the following snipers has the highest amount of confirmed kills?",
+          "opts": [
+            "Vasily Zaytsev",
+            "Craig Harrison",
+            "Chris Kyle",
+            "Simo Häyhä"
+          ],
+          "ans": 3,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Simo Häyhä.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What year is considered to be the year that the British Empire ended?",
+          "opts": [
+            "1971",
+            "1981",
+            "1997",
+            "1986"
+          ],
+          "ans": 2,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: 1997.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Who was the leader of the Communist Party of Yugoslavia ?",
+          "opts": [
+            "Josip Broz Tito",
+            "Aleskandar Petrovic",
+            "Karadjordje Petrovic",
+            "Milos Obilic"
+          ],
+          "ans": 0,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Josip Broz Tito.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which Las Vegas casino was originally constructed and operated by mobster Bugsy Siegel?",
+          "opts": [
+            "The Sahara",
+            "The Flamingo",
+            "The MGM Grand",
+            "The Sands"
+          ],
+          "ans": 1,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: The Flamingo.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Who was the main developer of the Suez Canal?",
+          "opts": [
+            "John Milton",
+            "Ferdinand de Lesseps",
+            "Johann Lukas von Hildebrandt",
+            "Louis-Eugène Cavaignac"
+          ],
+          "ans": 1,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Ferdinand de Lesseps.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which U.S. president was said to have been too honest to lie to his father about chopping down a cherry tree?",
+          "opts": [
+            "James Monroe",
+            "George Washington",
+            "Abraham Lincoln",
+            "Thomas Jefferson"
+          ],
+          "ans": 1,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: George Washington.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What was Manfred von Richthofen's nickname?",
+          "opts": [
+            "The Red Baron",
+            "The High Flying Ace",
+            "The Blue Serpent ",
+            "The Germany Gunner"
+          ],
+          "ans": 0,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: The Red Baron.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "The seed drill was invented by which British inventor?",
+          "opts": [
+            "Jethro Tull",
+            "Isaac Newton",
+            "J.J Thomson",
+            "Charles Babbage"
+          ],
+          "ans": 0,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Jethro Tull.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What was the code name for the Allied invasion of Southern France on August 15th, 1944?",
+          "opts": [
+            "Operation Torch",
+            "Operation Market Garden",
+            "Operation Dragoon",
+            "Operation Overlord"
+          ],
+          "ans": 2,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: Operation Dragoon.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "The Little Entente was an alliance formed against which nation?",
+          "opts": [
+            "France",
+            "Prussia",
+            "Hungary",
+            "Germany"
+          ],
+          "ans": 2,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Hungary.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "The Herero genocide was perpetrated in Africa by which of the following colonial nations?",
+          "opts": [
+            "Germany",
+            "Britain",
+            "France",
+            "Belgium"
+          ],
+          "ans": 0,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Germany.",
+          "source": "Open Trivia DB"
+        }
+      ]
+    },
+    {
+      "id": "opentdb-animals",
+      "title": "English Trivia: Động vật & Sinh học (Animals)",
+      "category": "Tiếng Anh & Thế giới",
+      "sub_category": "Động vật & Sinh học (Animals)",
+      "grade": "thcs-thpt",
+      "grade_label": "THCS, THPT & Đại chúng",
+      "difficulty": "Đa cấp độ",
+      "questions": [
+        {
+          "q": "The now extinct species \"Thylacine\" was native to where?",
+          "opts": [
+            "Tasmania, Australia",
+            "Oregon, United States",
+            "Baluchistan, Pakistan",
+            "Wallachia, Romania"
+          ],
+          "ans": 0,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Tasmania, Australia.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "To which biological phylum do all mammals, birds and reptiles belong?",
+          "opts": [
+            "Chordata",
+            "Echinodermata",
+            "Placazoa",
+            "Annelida"
+          ],
+          "ans": 0,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: Chordata.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What type of creature is a Bonobo?",
+          "opts": [
+            "Ape",
+            "Wildcat",
+            "Lion",
+            "Parrot"
+          ],
+          "ans": 0,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: Ape.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the scientific name of the cheetah?",
+          "opts": [
+            "Lynx rufus",
+            "Acinonyx jubatus",
+            "Panthera onca",
+            "Felis catus"
+          ],
+          "ans": 1,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: Acinonyx jubatus.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What colour is the female blackbird?",
+          "opts": [
+            "Brown",
+            "White",
+            "Yellow",
+            "Black"
+          ],
+          "ans": 0,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Brown.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the name of a rabbit's abode?",
+          "opts": [
+            "Dray",
+            "Nest",
+            "Burrow",
+            "Den"
+          ],
+          "ans": 2,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Burrow.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the name for a male bee that comes from an unfertilized egg?",
+          "opts": [
+            "Drone",
+            "Soldier",
+            "Male",
+            "Worker"
+          ],
+          "ans": 0,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Drone.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the collective noun for a group of crows?",
+          "opts": [
+            "Murder",
+            "Gaggle",
+            "Pack",
+            "Herd"
+          ],
+          "ans": 0,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Murder.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the common term for bovine spongiform encephalopathy (BSE)?",
+          "opts": [
+            "Weil's disease",
+            "Mad Cow disease",
+            "Foot-and-mouth disease",
+            "Milk fever"
+          ],
+          "ans": 1,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Mad Cow disease.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the scientific name for the Bald Eagle?",
+          "opts": [
+            "Tyto Alba",
+            "Cyanocitta Cristata",
+            "Haliaeetus Leucocephalus ",
+            "Aquila Chrysaetos"
+          ],
+          "ans": 2,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: Haliaeetus Leucocephalus .",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Snakes and lizards are known to flick their tongue, this behavior is to?",
+          "opts": [
+            "Taste the sweet air",
+            "Capture scent particles",
+            "Attract female mates",
+            "Threaten other species"
+          ],
+          "ans": 1,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Capture scent particles.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which of these animals are not real?",
+          "opts": [
+            "Tasmanian Devil",
+            "Sea Dragon",
+            "Nemean Lion",
+            "Giant Squid"
+          ],
+          "ans": 2,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Nemean Lion.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Cashmere is the wool from which kind of animal?",
+          "opts": [
+            "Goat",
+            "Llama",
+            "Sheep",
+            "Camel"
+          ],
+          "ans": 0,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Goat.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the collective noun for bears?",
+          "opts": [
+            "Drove",
+            "Husk",
+            "Tribe",
+            "Sloth"
+          ],
+          "ans": 3,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Sloth.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the collective noun for vultures?",
+          "opts": [
+            "Gaze",
+            "Wake",
+            "Building",
+            "Ambush"
+          ],
+          "ans": 1,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: Wake.",
+          "source": "Open Trivia DB"
+        }
+      ]
+    },
+    {
+      "id": "opentdb-general",
+      "title": "English Trivia: Kiến thức Chung Quốc tế (General Knowledge)",
+      "category": "Tiếng Anh & Thế giới",
+      "sub_category": "Kiến thức Chung Quốc tế (General Knowledge)",
+      "grade": "thcs-thpt",
+      "grade_label": "THCS, THPT & Đại chúng",
+      "difficulty": "Đa cấp độ",
+      "questions": [
+        {
+          "q": "Terry Gilliam was an animator that worked with which British comedy group?",
+          "opts": [
+            "The Goodies‎",
+            "The Penny Dreadfuls",
+            "The League of Gentlemen‎",
+            "Monty Python"
+          ],
+          "ans": 3,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Monty Python.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What does VR stand for?",
+          "opts": [
+            "Visual Recognition",
+            "Virtual Reality",
+            "Voice Recognition",
+            "Very Real"
+          ],
+          "ans": 1,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Virtual Reality.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Who is considered the \"Father of Modern Philosophy\"?",
+          "opts": [
+            "Albert Einstein",
+            "Plato",
+            "Antoine Lavoiser",
+            "René Descartes"
+          ],
+          "ans": 3,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: René Descartes.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What technology is named after a tenth-century ruler of Denmark and Norway?",
+          "opts": [
+            "Internet",
+            "Bluetooth",
+            "Wi-Fi",
+            "GPS"
+          ],
+          "ans": 1,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Bluetooth.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "In DC comics where does the Green Arrow (Oliver Queen) live?",
+          "opts": [
+            "Central City",
+            "Metropolis",
+            "Star City",
+            "Gotham City"
+          ],
+          "ans": 2,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Star City.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the shortest month of the year?",
+          "opts": [
+            "September",
+            "April",
+            "December",
+            "February"
+          ],
+          "ans": 3,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: February.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What Latin phrase roughly translates to \"seize the day\"?",
+          "opts": [
+            "Plus ultra",
+            "Sic semper tyrannis",
+            "Memento mori",
+            "Carpe diem"
+          ],
+          "ans": 3,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Carpe diem.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which sign of the zodiac comes between Virgo and Scorpio?",
+          "opts": [
+            "Capricorn",
+            "Taurus",
+            "Libra",
+            "Gemini"
+          ],
+          "ans": 2,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Libra.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What do the Dutch call their language?",
+          "opts": [
+            "Dansk",
+            "Hollander",
+            "Nederlands",
+            "Deutsch"
+          ],
+          "ans": 2,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Nederlands.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which one of these Swedish companies was founded in 1943?",
+          "opts": [
+            "Lindex",
+            "IKEA",
+            "Clas Ohlson",
+            "H & M"
+          ],
+          "ans": 1,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: IKEA.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which of these Nicktoons were NOT originally a short on Oh Yeah! Cartoons before becoming their own series?",
+          "opts": [
+            "Danny Phantom",
+            "ChalkZone",
+            "My Life as a Teenage Robot",
+            "The Fairly OddParents"
+          ],
+          "ans": 0,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Danny Phantom.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What English word means to \"think deeply\"?",
+          "opts": [
+            "Condensate",
+            "Confiscate",
+            "Constipate",
+            "Contemplate"
+          ],
+          "ans": 3,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Contemplate.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "The word \"astasia\" means which of the following?",
+          "opts": [
+            "A feverish desire to rip one's clothes off",
+            "The inability to concentrate on anything",
+            "The inability to make decisions",
+            "The inability to stand up"
+          ],
+          "ans": 3,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: The inability to stand up.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Frank Lloyd Wright was the architect behind what famous building?",
+          "opts": [
+            "Sydney Opera House",
+            "The Guggenheim",
+            "The Space Needle",
+            "Villa Savoye"
+          ],
+          "ans": 1,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: The Guggenheim.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which of the following languages does NOT use gender as a part of its grammar?",
+          "opts": [
+            "German",
+            "Turkish",
+            "Danish",
+            "Polish"
+          ],
+          "ans": 1,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: Turkish.",
+          "source": "Open Trivia DB"
+        }
+      ]
+    }
+  ]
+}

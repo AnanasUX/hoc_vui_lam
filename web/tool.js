@@ -516,13 +516,49 @@ function initHandwritingTool(controls, preview) {
 }
 
 /* 3. TRỘN ĐỀ TRẮC NGHIỆM */
-function initQuizShufflerTool(controls, preview) {
-  const sample = `Câu 1: Thủ đô của Việt Nam là gì?\nA. Hà Nội\nB. Đà Nẵng\nC. TP. Hồ Chí Minh\nD. Huế\nĐáp án: A\n\nCâu 2: 12 × 5 bằng bao nhiêu?\nA. 50\nB. 60\nC. 65\nD. 70\nĐáp án: B\n\nCâu 3: Hành tinh nào gần Mặt Trời nhất?\nA. Trái Đất\nB. Sao Kim\nC. Sao Thủy\nD. Sao Hỏa\nĐáp án: C`;
+async function initQuizShufflerTool(controls, preview) {
+  const defaultSample = `Câu 1: Thủ đô của Việt Nam là gì?\nA. Hà Nội\nB. Đà Nẵng\nC. TP. Hồ Chí Minh\nD. Huế\nĐáp án: A\n\nCâu 2: 12 × 5 bằng bao nhiêu?\nA. 50\nB. 60\nC. 65\nD. 70\nĐáp án: B\n\nCâu 3: Hành tinh nào gần Mặt Trời nhất?\nA. Trái Đất\nB. Sao Kim\nC. Sao Thủy\nD. Sao Hỏa\nĐáp án: C`;
+
+  let sampleExams = [];
+  try {
+    const res = await fetch("data/sample_exams.json");
+    if (res.ok) {
+      const data = await res.json();
+      sampleExams = data.sample_exams || [];
+    }
+  } catch (e) {
+    console.warn("Could not load sample exams", e);
+  }
+
   controls.innerHTML = `
-    <div class="field"><label>Nhập câu hỏi (mỗi câu cách nhau 1 dòng trống)</label><textarea id="qInput" rows="10">${sample}</textarea></div>
+    <div class="field">
+      <label>Bộ đề thi mẫu có sẵn</label>
+      <select id="qPresetSelect">
+        <option value="default">-- Mặc định: Kiến thức chung (3 câu) --</option>
+        ${sampleExams.map((ex, i) => `<option value="${i}">${escapeHtml(ex.title)} (${ex.subject})</option>`).join("")}
+      </select>
+    </div>
+    <div class="field"><label>Nội dung câu hỏi (mỗi câu cách nhau 1 dòng trống)</label><textarea id="qInput" rows="10">${defaultSample}</textarea></div>
     <div class="field"><label>Số mã đề cần trộn</label><input id="qCodes" type="number" min="1" max="6" value="2" /></div>
-    <button class="btn" id="qShuffle" style="width:100%;">🔀 Trộn đề ngay</button>
+    <button class="btn btn-primary" id="qShuffle" style="width:100%;">🔀 Trộn đề ngay</button>
   `;
+
+  const presetSelect = document.getElementById("qPresetSelect");
+  if (presetSelect && sampleExams.length) {
+    presetSelect.addEventListener("change", () => {
+      const val = presetSelect.value;
+      if (val === "default") {
+        document.getElementById("qInput").value = defaultSample;
+      } else {
+        const ex = sampleExams[parseInt(val, 10)];
+        if (ex && ex.content) {
+          document.getElementById("qInput").value = ex.content;
+          showToast(`Đã nạp: ${ex.title}`);
+        }
+      }
+      render();
+    });
+  }
 
   function parseQuestions(raw) {
     return raw
@@ -580,8 +616,10 @@ function initQuizShufflerTool(controls, preview) {
     showToast("Đã trộn mã đề mới!");
   });
   document.getElementById("qInput").addEventListener("input", render);
+  document.getElementById("qCodes").addEventListener("input", render);
   render();
 }
+
 
 /* 4. CHIA NHÓM & VÒNG QUAY MAY MẮN (CANVAS) */
 function initGroupTool(controls, preview) {
@@ -1197,12 +1235,50 @@ function initSudokuTool(controls, preview) {
 }
 
 /* 11. THẺ HỌC TỪ (FLASHCARDS) */
-function initFlashcardTool(controls, preview, tool) {
+async function initFlashcardTool(controls, preview, tool) {
+  const defaultSample = `Apple | Quả táo\nBook | Quyển sách\nCat | Con mèo\nDog | Con chó\nSun | Mặt trời\nMoon | Mặt trăng\nTree | Cái cây\nWater | Nước`;
+
+  let flashcardSets = [];
+  try {
+    const res = await fetch("data/flashcards.json");
+    if (res.ok) {
+      const data = await res.json();
+      flashcardSets = data.flashcards || [];
+    }
+  } catch (e) {
+    console.warn("Could not load flashcard sets", e);
+  }
+
   controls.innerHTML = `
+    <div class="field">
+      <label>Bộ thẻ từ vựng mẫu có sẵn</label>
+      <select id="fcPresetSelect">
+        <option value="default">-- Mặc định: Từ vựng cơ bản (8 thẻ) --</option>
+        ${flashcardSets.map((fc, i) => `<option value="${i}">${escapeHtml(fc.category)} (${fc.items.length} thẻ)</option>`).join("")}
+      </select>
+    </div>
     <div class="field"><label>Danh sách thẻ (Mặt trước | Mặt sau, mỗi dòng 1 thẻ)</label>
-      <textarea id="fcInput" rows="8">Apple | Quả táo\nBook | Quyển sách\nCat | Con mèo\nDog | Con chó\nSun | Mặt trời\nMoon | Mặt trăng\nTree | Cái cây\nWater | Nước</textarea>
+      <textarea id="fcInput" rows="9">${defaultSample}</textarea>
     </div>
   `;
+
+  const presetSelect = document.getElementById("fcPresetSelect");
+  if (presetSelect && flashcardSets.length) {
+    presetSelect.addEventListener("change", () => {
+      const val = presetSelect.value;
+      if (val === "default") {
+        document.getElementById("fcInput").value = defaultSample;
+      } else {
+        const set = flashcardSets[parseInt(val, 10)];
+        if (set && set.items) {
+          const lines = set.items.map((it) => `${it.term} ${it.phonetic || ""} | ${it.meaning}`);
+          document.getElementById("fcInput").value = lines.join("\n");
+          showToast(`Đã nạp bộ thẻ: ${set.category}`);
+        }
+      }
+      render();
+    });
+  }
 
   function render() {
     const items = document
@@ -1212,12 +1288,15 @@ function initFlashcardTool(controls, preview, tool) {
       .filter((p) => p[0]);
 
     preview.innerHTML = `
-      <div class="a4-header"><div><strong>${escapeHtml(tool.title.toUpperCase())}</strong></div><div>Cắt theo đường nét đứt</div></div>
+      <div class="a4-header">
+        <div><strong>${escapeHtml(tool.title.toUpperCase())}</strong><br><small>Tổng cộng: ${items.length} thẻ học</small></div>
+        <div>✂️ Cắt theo đường nét đứt</div>
+      </div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
         ${items
           .map(
             (p) => `
-          <div style="border:2px dashed #64748b;border-radius:12px;padding:20px;text-align:center;min-height:110px;display:flex;flex-direction:column;justify-content:center;">
+          <div style="border:2px dashed #64748b;border-radius:12px;padding:20px;text-align:center;min-height:110px;display:flex;flex-direction:column;justify-content:center;background:#ffffff;">
             <div style="font-size:1.3rem;font-weight:800;color:#4f46e5;">${escapeHtml(p[0])}</div>
             ${p[1] ? `<div style="font-size:1rem;color:#475569;margin-top:6px;">${escapeHtml(p[1])}</div>` : ""}
           </div>`
@@ -1230,6 +1309,7 @@ function initFlashcardTool(controls, preview, tool) {
   document.getElementById("fcInput").addEventListener("input", render);
   render();
 }
+
 
 /* 12. STUDIO A4 ĐA NĂNG CHO CÁC CÔNG CỤ CÒN LẠI */
 function initGenericTool(controls, preview, tool) {
@@ -1280,7 +1360,7 @@ async function init() {
 
   if (tool.slug === "phieu-toan") initMathTool(controls, preview, tool);
   else if (["tap-viet-chu", "giay-o-ly", "tap-to-net-co-ban"].includes(tool.slug)) initHandwritingTool(controls, preview);
-  else if (tool.slug === "tron-de-trac-nghiem") initQuizShufflerTool(controls, preview);
+  else if (tool.slug === "tron-de-trac-nghiem") await initQuizShufflerTool(controls, preview);
   else if (tool.slug === "chia-nhom") initGroupTool(controls, preview);
   else if (tool.slug === "thoi-khoa-bieu") initTimetableTool(controls, preview);
   else if (tool.slug === "giay-khen") initCertificateTool(controls, preview);
@@ -1288,8 +1368,9 @@ async function init() {
   else if (["o-chu", "tim-tu"].includes(tool.slug)) initWordSearchTool(controls, preview);
   else if (tool.slug === "giay-khuong-nhac") initMusicStaffTool(controls, preview);
   else if (tool.slug === "sudoku") initSudokuTool(controls, preview);
-  else if (tool.slug.startsWith("the-") || tool.group === "Thẻ, bảng và khen thưởng") initFlashcardTool(controls, preview, tool);
+  else if (tool.slug.startsWith("the-") || tool.group === "Thẻ, bảng và khen thưởng") await initFlashcardTool(controls, preview, tool);
   else initGenericTool(controls, preview, tool);
 }
+
 
 init();

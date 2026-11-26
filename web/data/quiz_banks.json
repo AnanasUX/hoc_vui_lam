@@ -1,0 +1,2112 @@
+{
+  "total_banks": 18,
+  "total_questions": 150,
+  "banks": [
+    {
+      "id": "general-easy",
+      "title": "Kiến thức chung Tiểu học #1",
+      "category": "Kiến thức chung",
+      "grade": "all",
+      "grade_label": "Tiểu học & Đại chúng",
+      "difficulty": "Dễ (Junior)",
+      "questions": [
+        {
+          "q": "Thủ đô của nước Việt Nam là thành phố nào?",
+          "opts": [
+            "TP. Hồ Chí Minh",
+            "Hà Nội",
+            "Đà Nẵng",
+            "Huế"
+          ],
+          "ans": 1,
+          "exp": "Hà Nội là thủ đô của nước Cộng hòa Xã hội Chủ nghĩa Việt Nam."
+        },
+        {
+          "q": "Một năm thường có bao nhiêu ngày?",
+          "opts": [
+            "360 ngày",
+            "364 ngày",
+            "365 ngày",
+            "366 ngày"
+          ],
+          "ans": 2,
+          "exp": "Năm thường có 365 ngày; năm nhuận có 366 ngày (tháng 2 có 29 ngày)."
+        },
+        {
+          "q": "Hành tinh nào gần Mặt Trời nhất trong Hệ Mặt Trời?",
+          "opts": [
+            "Sao Kim",
+            "Trái Đất",
+            "Sao Thủy",
+            "Sao Hỏa"
+          ],
+          "ans": 2,
+          "exp": "Sao Thủy (Mercury) là hành tinh nằm gần Mặt Trời nhất."
+        },
+        {
+          "q": "Cây xanh quang hợp cần những yếu tố chính nào?",
+          "opts": [
+            "Ánh sáng, nước, khí CO₂",
+            "Chỉ cần nước",
+            "Bóng tối và khí Nitơ",
+            "Đá và cát"
+          ],
+          "ans": 0,
+          "exp": "Cây xanh sử dụng ánh sáng Mặt Trời, nước và khí CO₂ để tạo chất hữu cơ và nhả khí O₂."
+        },
+        {
+          "q": "Hình vuông có cạnh 6 cm thì chu vi là bao nhiêu?",
+          "opts": [
+            "12 cm",
+            "18 cm",
+            "24 cm",
+            "36 cm"
+          ],
+          "ans": 2,
+          "exp": "Chu vi hình vuông = cạnh × 4 = 6 × 4 = 24 cm."
+        }
+      ]
+    },
+    {
+      "id": "science-med",
+      "title": "Khoa học & Vũ trụ #1",
+      "category": "Khoa học",
+      "grade": "lop-4",
+      "grade_label": "Lớp 4 - 5 & THCS",
+      "difficulty": "Trung bình",
+      "questions": [
+        {
+          "q": "Nước tinh khiết sôi ở nhiệt độ bao nhiêu độ C (ở áp suất 1 atm)?",
+          "opts": [
+            "80°C",
+            "90°C",
+            "100°C",
+            "120°C"
+          ],
+          "ans": 2,
+          "exp": "Ở áp suất tiêu chuẩn 1 atm, nước sôi ở 100°C và đóng băng ở 0°C."
+        },
+        {
+          "q": "Bộ phận nào của cơ thể người bơm máu đi khắp cơ thể?",
+          "opts": [
+            "Phổi",
+            "Tim",
+            "Gan",
+            "Dạ dày"
+          ],
+          "ans": 1,
+          "exp": "Tim hoạt động như một máy bơm cơ học đưa máu giàu oxy đi nuôi toàn bộ cơ thể."
+        },
+        {
+          "q": "Hành tinh nào lớn nhất trong Hệ Mặt Trời?",
+          "opts": [
+            "Sao Thổ",
+            "Sao Mộc",
+            "Sao Thiên Vương",
+            "Trái Đất"
+          ],
+          "ans": 1,
+          "exp": "Sao Mộc (Jupiter) là hành tinh khí khổng lồ lớn nhất Hệ Mặt Trời."
+        },
+        {
+          "q": "Âm thanh truyền nhanh nhất trong môi trường nào?",
+          "opts": [
+            "Chân không",
+            "Chất khí",
+            "Chất lỏng",
+            "Chất rắn"
+          ],
+          "ans": 3,
+          "exp": "Các phân tử trong chất rắn xếp sát nhau nên âm thanh truyền đi nhanh nhất; âm thanh không truyền được trong chân không."
+        },
+        {
+          "q": "Nguyên tố hóa học nào chiếm tỷ lệ lớn nhất trong không khí?",
+          "opts": [
+            "Oxy",
+            "Nitơ",
+            "CO₂",
+            "Hydro"
+          ],
+          "ans": 1,
+          "exp": "Không khí chứa khoảng 78% khí Nitơ, 21% khí Oxy và 1% các khí khác."
+        }
+      ]
+    },
+    {
+      "id": "geo-vn-med",
+      "title": "Địa lý & Lịch sử Việt Nam #1",
+      "category": "Lịch sử & Địa lý",
+      "grade": "lop-4",
+      "grade_label": "Lớp 4 - 5 & THCS",
+      "difficulty": "Trung bình",
+      "questions": [
+        {
+          "q": "Đỉnh núi nào cao nhất Việt Nam (Nóc nhà Đông Dương)?",
+          "opts": [
+            "Bà Đen",
+            "Fansipan",
+            "Ngọc Linh",
+            "Bạch Mã"
+          ],
+          "ans": 1,
+          "exp": "Đỉnh Fansipan thuộc dãy Hoàng Liên Sơn (Lào Cai) cao 3.147,3 m."
+        },
+        {
+          "q": "Vị vua nào đã dời đô từ Hoa Lư về Thăng Long năm 1010?",
+          "opts": [
+            "Đinh Tiên Hoàng",
+            "Lý Thái Tổ",
+            "Trần Nhân Tông",
+            "Lê Lợi"
+          ],
+          "ans": 1,
+          "exp": "Năm 1010, vua Lý Thái Tổ ban Chiếu dời đô và đặt tên kinh đô mới là Thăng Long."
+        },
+        {
+          "q": "Sông nào dài nhất chảy qua lãnh thổ Việt Nam?",
+          "opts": [
+            "Sông Hồng",
+            "Sông Đà",
+            "Sông Mê Kông (Cửu Long)",
+            "Sông Hương"
+          ],
+          "ans": 2,
+          "exp": "Sông Mê Kông có tổng chiều dài ~4.350 km, chảy vào Việt Nam qua đồng bằng sông Cửu Long."
+        },
+        {
+          "q": "Vịnh Hạ Long nằm ở tỉnh nào của Việt Nam?",
+          "opts": [
+            "Hải Phòng",
+            "Quảng Ninh",
+            "Thanh Hóa",
+            "Khánh Hòa"
+          ],
+          "ans": 1,
+          "exp": "Vịnh Hạ Long thuộc tỉnh Quảng Ninh, được UNESCO công nhận là Di sản Thiên nhiên Thế giới."
+        },
+        {
+          "q": "Chiến thắng Điện Biên Phủ diễn ra vào năm nào?",
+          "opts": [
+            "1945",
+            "1954",
+            "1968",
+            "1975"
+          ],
+          "ans": 1,
+          "exp": "Chiến thắng lịch sử Điện Biên Phủ diễn ra ngày 7/5/1954."
+        }
+      ]
+    },
+    {
+      "id": "english-hard",
+      "title": "Tiếng Anh & Toán Tư Duy #1",
+      "category": "Toán & Tiếng Anh",
+      "grade": "thcs-thpt",
+      "grade_label": "THCS & THPT",
+      "difficulty": "Khó",
+      "questions": [
+        {
+          "q": "Chọn từ trái nghĩa với 'Ancient':",
+          "opts": [
+            "Old",
+            "Modern",
+            "Historic",
+            "Classic"
+          ],
+          "ans": 1,
+          "exp": "'Ancient' nghĩa là cổ đại; trái nghĩa là 'Modern' (hiện đại)."
+        },
+        {
+          "q": "Một tam giác có đáy 12 cm, chiều cao 8 cm. Diện tích là:",
+          "opts": [
+            "96 cm²",
+            "48 cm²",
+            "40 cm²",
+            "24 cm²"
+          ],
+          "ans": 1,
+          "exp": "Diện tích tam giác = (đáy × cao) / 2 = (12 × 8) / 2 = 48 cm²."
+        },
+        {
+          "q": "Câu nào đúng ngữ pháp tiếng Anh?",
+          "opts": [
+            "She don't like apples.",
+            "She doesn't likes apples.",
+            "She doesn't like apples.",
+            "She not like apples."
+          ],
+          "ans": 2,
+          "exp": "Với chủ ngữ ngôi thứ 3 số ít (She), phủ định dùng 'doesn't' + động từ nguyên mẫu 'like'."
+        },
+        {
+          "q": "Tìm số tiếp theo của dãy: 2, 6, 12, 20, 30, ...?",
+          "opts": [
+            "38",
+            "40",
+            "42",
+            "44"
+          ],
+          "ans": 2,
+          "exp": "Quy luật: 1×2=2, 2×3=6, 3×4=12, 4×5=20, 5×6=30, số tiếp theo là 6×7 = 42."
+        }
+      ]
+    },
+    {
+      "id": "math-grade-1",
+      "title": "Toán Lớp 1: Số học & Hình khối cơ bản",
+      "category": "Toán học",
+      "grade": "lop-1",
+      "grade_label": "Lớp 1",
+      "difficulty": "Dễ (Junior)",
+      "questions": [
+        {
+          "q": "Số liền sau của số 9 là số nào?",
+          "opts": [
+            "8",
+            "10",
+            "11",
+            "7"
+          ],
+          "ans": 1,
+          "exp": "Số liền sau của 9 là 10 (9 + 1 = 10)."
+        },
+        {
+          "q": "Kết quả của phép tính: 5 + 4 = ?",
+          "opts": [
+            "8",
+            "9",
+            "10",
+            "7"
+          ],
+          "ans": 1,
+          "exp": "5 cộng 4 bằng 9."
+        },
+        {
+          "q": "Hình nào dưới đây có 3 cạnh và 3 đỉnh?",
+          "opts": [
+            "Hình tròn",
+            "Hình vuông",
+            "Hình tam giác",
+            "Hình chữ nhật"
+          ],
+          "ans": 2,
+          "exp": "Hình tam giác có 3 cạnh và 3 đỉnh."
+        },
+        {
+          "q": "Điền dấu thích hợp: 8 - 3 ... 4 + 2",
+          "opts": [
+            ">",
+            "<",
+            "=",
+            "Không so sánh được"
+          ],
+          "ans": 1,
+          "exp": "Ta có: 8 - 3 = 5; 4 + 2 = 6. Vì 5 < 6 nên điền dấu <."
+        },
+        {
+          "q": "Nhà bạn Lan có 10 quả trứng, mẹ dùng hết 4 quả để làm bánh. Hỏi nhà Lan còn lại mấy quả trứng?",
+          "opts": [
+            "4 quả",
+            "5 quả",
+            "6 quả",
+            "7 quả"
+          ],
+          "ans": 2,
+          "exp": "Số quả trứng còn lại là: 10 - 4 = 6 quả."
+        },
+        {
+          "q": "Số bé nhất có hai chữ số là số nào?",
+          "opts": [
+            "01",
+            "10",
+            "11",
+            "99"
+          ],
+          "ans": 1,
+          "exp": "Số bé nhất có hai chữ số là 10."
+        }
+      ]
+    },
+    {
+      "id": "math-grade-2",
+      "title": "Toán Lớp 2: Phép nhân, chia & Đại lượng đo",
+      "category": "Toán học",
+      "grade": "lop-2",
+      "grade_label": "Lớp 2",
+      "difficulty": "Dễ (Junior)",
+      "questions": [
+        {
+          "q": "Kết quả của phép tính: 5 × 7 = ?",
+          "opts": [
+            "30",
+            "35",
+            "40",
+            "45"
+          ],
+          "ans": 1,
+          "exp": "Theo bảng nhân 5: 5 × 7 = 35."
+        },
+        {
+          "q": "Có 18 viên kẹo chia đều cho 2 bạn. Hỏi mỗi bạn được mấy viên kẹo?",
+          "opts": [
+            "8 viên",
+            "9 viên",
+            "10 viên",
+            "7 viên"
+          ],
+          "ans": 1,
+          "exp": "Mỗi bạn được: 18 ÷ 2 = 9 viên kẹo."
+        },
+        {
+          "q": "1 mét (m) bằng bao nhiêu xăng-ti-mét (cm)?",
+          "opts": [
+            "10 cm",
+            "100 cm",
+            "1000 cm",
+            "50 cm"
+          ],
+          "ans": 1,
+          "exp": "1 m = 100 cm."
+        },
+        {
+          "q": "Hình chữ nhật có độ dài các cạnh lần lượt là 6 cm và 4 cm. Chu vi của hình chữ nhật là:",
+          "opts": [
+            "10 cm",
+            "20 cm",
+            "24 cm",
+            "16 cm"
+          ],
+          "ans": 1,
+          "exp": "Chu vi hình chữ nhật = (dài + rộng) × 2 = (6 + 4) × 2 = 20 cm."
+        },
+        {
+          "q": "Tìm x biết: x + 25 = 60",
+          "opts": [
+            "35",
+            "40",
+            "85",
+            "45"
+          ],
+          "ans": 0,
+          "exp": "x = 60 - 25 = 35."
+        }
+      ]
+    },
+    {
+      "id": "math-grade-3",
+      "title": "Toán Lớp 3: Bảng nhân chia & Chu vi - Diện tích",
+      "category": "Toán học",
+      "grade": "lop-3",
+      "grade_label": "Lớp 3",
+      "difficulty": "Trung bình",
+      "questions": [
+        {
+          "q": "Một hình vuông có cạnh 8 cm. Diện tích của hình vuông đó là:",
+          "opts": [
+            "32 cm²",
+            "64 cm²",
+            "16 cm²",
+            "64 cm"
+          ],
+          "ans": 1,
+          "exp": "Diện tích hình vuông = cạnh × cạnh = 8 × 8 = 64 cm²."
+        },
+        {
+          "q": "Gấp 15 lên 4 lần rồi bớt đi 20 thì được số nào?",
+          "opts": [
+            "40",
+            "50",
+            "60",
+            "35"
+          ],
+          "ans": 0,
+          "exp": "15 × 4 = 60; sau đó 60 - 20 = 40."
+        },
+        {
+          "q": "Một năm có 365 ngày. Hỏi năm đó có bao nhiêu tuần lễ và dư mấy ngày?",
+          "opts": [
+            "51 tuần dư 8 ngày",
+            "52 tuần dư 1 ngày",
+            "52 tuần dư 2 ngày",
+            "50 tuần dư 15 ngày"
+          ],
+          "ans": 1,
+          "exp": "365 ÷ 7 = 52 (dư 1). Vậy có 52 tuần lễ và dư 1 ngày."
+        },
+        {
+          "q": "Giá trị của biểu thức 120 + 30 × 3 là:",
+          "opts": [
+            "450",
+            "210",
+            "150",
+            "390"
+          ],
+          "ans": 1,
+          "exp": "Ưu tiên nhân chia trước: 30 × 3 = 90; 120 + 90 = 210."
+        },
+        {
+          "q": "Số La Mã XIX tương ứng với số tự nhiên nào?",
+          "opts": [
+            "17",
+            "19",
+            "21",
+            "16"
+          ],
+          "ans": 1,
+          "exp": "X = 10, IX = 9; XIX = 10 + 9 = 19."
+        }
+      ]
+    },
+    {
+      "id": "math-grade-4",
+      "title": "Toán Lớp 4: Phân số & Toán tư duy",
+      "category": "Toán học",
+      "grade": "lop-4",
+      "grade_label": "Lớp 4",
+      "difficulty": "Trung bình",
+      "questions": [
+        {
+          "q": "Phân số nào dưới đây bằng phân số 3/4?",
+          "opts": [
+            "6/10",
+            "9/12",
+            "12/20",
+            "15/25"
+          ],
+          "ans": 1,
+          "exp": "Nhân cả tử và mẫu của 3/4 với 3 ta được: (3×3)/(4×3) = 9/12."
+        },
+        {
+          "q": "Trung bình cộng của ba số: 24, 36 và 45 là:",
+          "opts": [
+            "35",
+            "36",
+            "38",
+            "34"
+          ],
+          "ans": 0,
+          "exp": "Tổng = 24 + 36 + 45 = 105. Trung bình cộng = 105 ÷ 3 = 35."
+        },
+        {
+          "q": "Tính: 2/5 + 3/10 = ?",
+          "opts": [
+            "5/15",
+            "7/10",
+            "1/2",
+            "4/5"
+          ],
+          "ans": 1,
+          "exp": "Quy đồng: 2/5 = 4/10. Khi đó: 4/10 + 3/10 = 7/10."
+        },
+        {
+          "q": "Một mảnh đất hình thoi có độ dài hai đường chéo là 16 m và 12 m. Diện tích mảnh đất là:",
+          "opts": [
+            "192 m²",
+            "96 m²",
+            "56 m²",
+            "144 m²"
+          ],
+          "ans": 1,
+          "exp": "Diện tích hình thoi = (đường chéo 1 × đường chéo 2) ÷ 2 = (16 × 12) ÷ 2 = 96 m²."
+        },
+        {
+          "q": "Hai số có tổng bằng 72 và hiệu bằng 16. Số lớn là:",
+          "opts": [
+            "44",
+            "40",
+            "48",
+            "36"
+          ],
+          "ans": 0,
+          "exp": "Số lớn = (Tổng + Hiệu) ÷ 2 = (72 + 16) ÷ 2 = 88 ÷ 2 = 44."
+        }
+      ]
+    },
+    {
+      "id": "math-grade-5",
+      "title": "Toán Lớp 5: Số thập phân, Tỉ số % & Chuyển động đều",
+      "category": "Toán học",
+      "grade": "lop-5",
+      "grade_label": "Lớp 5",
+      "difficulty": "Khó",
+      "questions": [
+        {
+          "q": "Viết phân số 3/5 dưới dạng số thập phân là:",
+          "opts": [
+            "0,35",
+            "0,6",
+            "0,53",
+            "0,06"
+          ],
+          "ans": 1,
+          "exp": "3 ÷ 5 = 0,6."
+        },
+        {
+          "q": "Lớp 5A có 40 học sinh, trong đó có 24 học sinh nữ. Tỉ số phần trăm của học sinh nữ so với cả lớp là:",
+          "opts": [
+            "55%",
+            "60%",
+            "65%",
+            "40%"
+          ],
+          "ans": 1,
+          "exp": "Tỉ số phần trăm = (24 ÷ 40) × 100% = 0,6 × 100% = 60%."
+        },
+        {
+          "q": "Một ô tô đi quãng đường 120 km hết 2 giờ 30 phút. Vận tốc của ô tô là:",
+          "opts": [
+            "48 km/h",
+            "50 km/h",
+            "52 km/h",
+            "45 km/h"
+          ],
+          "ans": 0,
+          "exp": "2 giờ 30 phút = 2,5 giờ. Vận tốc v = s ÷ t = 120 ÷ 2,5 = 48 km/h."
+        },
+        {
+          "q": "Hình lập phương có cạnh 4 dm. Thể tích của hình lập phương đó là:",
+          "opts": [
+            "16 dm³",
+            "48 dm³",
+            "64 dm³",
+            "96 dm³"
+          ],
+          "ans": 2,
+          "exp": "Thể tích hình lập phương = cạnh × cạnh × cạnh = 4 × 4 × 4 = 64 dm³."
+        },
+        {
+          "q": "Một hình tròn có bán kính r = 5 cm. Chu vi của hình tròn là:",
+          "opts": [
+            "15,7 cm",
+            "31,4 cm",
+            "78,5 cm",
+            "25 cm"
+          ],
+          "ans": 1,
+          "exp": "Chu vi hình tròn = 2 × r × 3,14 = 2 × 5 × 3,14 = 31,4 cm."
+        }
+      ]
+    },
+    {
+      "id": "tv-grade-primary",
+      "title": "Tiếng Việt & Luyện từ và câu: Biện pháp tu từ & Ngữ pháp",
+      "category": "Tiếng Việt",
+      "grade": "lop-3",
+      "grade_label": "Lớp 3 - 5",
+      "difficulty": "Trung bình",
+      "questions": [
+        {
+          "q": "Câu nào dưới đây sử dụng biện pháp so sánh?",
+          "opts": [
+            "Bầu trời hôm nay thật cao và xanh.",
+            "Trẻ em như búp trên cành.",
+            "Đàn chim én đang ríu rít gọi xuân về.",
+            "Mặt trời từ từ nhô lên khỏi rặng tre."
+          ],
+          "ans": 1,
+          "exp": "Câu 'Trẻ em như búp trên cành' so sánh 'Trẻ em' với 'búp trên cành' qua từ 'như'."
+        },
+        {
+          "q": "Trong câu 'Bác kim giờ thận trọng, nhích từng li từng li', sự vật nào được nhân hóa?",
+          "opts": [
+            "Bác nông dân",
+            "Cái đồng hồ",
+            "Kim giờ",
+            "Cái thước kẻ"
+          ],
+          "ans": 2,
+          "exp": "'Kim giờ' được gọi bằng 'Bác' và mang hành động 'thận trọng nhích' như con người."
+        },
+        {
+          "q": "Cặp từ nào dưới đây là cặp từ trái nghĩa?",
+          "opts": [
+            "Siêng năng - Cần cù",
+            "Dũng cảm - Hèn nhát",
+            "Thông minh - Sáng dạ",
+            "Hiền lành - Nhân hậu"
+          ],
+          "ans": 1,
+          "exp": "'Dũng cảm' (can đảm) trái nghĩa với 'Hèn nhát' (nhút nhát, sợ hãi)."
+        },
+        {
+          "q": "Thành ngữ nào dưới đây nói về lòng yêu quê hương, đất nước?",
+          "opts": [
+            "Uống nước nhớ nguồn",
+            "Học thầy không tày học bạn",
+            "Chậm như rùa",
+            "Lá lành đùm lá rách"
+          ],
+          "ans": 0,
+          "exp": "'Uống nước nhớ nguồn' khuyên con người luôn ghi nhớ cội nguồn, tổ tiên và đất nước."
+        },
+        {
+          "q": "Xác định từ loại của từ 'yêu thương' trong câu 'Tình cảm yêu thương của mẹ dành cho em vô bờ bến':",
+          "opts": [
+            "Danh từ",
+            "Động từ",
+            "Tính từ",
+            "Đại từ"
+          ],
+          "ans": 1,
+          "exp": "'Yêu thương' là động từ biểu thị trạng thái tình cảm."
+        }
+      ]
+    },
+    {
+      "id": "english-primary-starters",
+      "title": "Tiếng Anh Thiếu Nhi (Starters & Movers)",
+      "category": "Tiếng Anh",
+      "grade": "lop-3",
+      "grade_label": "Lớp 1 - 5",
+      "difficulty": "Dễ (Junior)",
+      "questions": [
+        {
+          "q": "What animal says 'quack quack'?",
+          "opts": [
+            "Dog",
+            "Cat",
+            "Duck",
+            "Cow"
+          ],
+          "ans": 2,
+          "exp": "A duck says 'quack quack'."
+        },
+        {
+          "q": "Choose the correct sentence:",
+          "opts": [
+            "I have two sister.",
+            "I have two sisters.",
+            "I has two sisters.",
+            "I having two sisters."
+          ],
+          "ans": 1,
+          "exp": "Chủ ngữ 'I' đi với 'have', số lượng 'two' đi với danh từ số nhiều 'sisters'."
+        },
+        {
+          "q": "What is the color of an apple usually?",
+          "opts": [
+            "Blue",
+            "Red",
+            "Purple",
+            "Black"
+          ],
+          "ans": 1,
+          "exp": "Apples are usually red or green."
+        },
+        {
+          "q": "How many days are there in a week?",
+          "opts": [
+            "5 days",
+            "6 days",
+            "7 days",
+            "8 days"
+          ],
+          "ans": 2,
+          "exp": "There are 7 days in a week (Monday to Sunday)."
+        },
+        {
+          "q": "Complete the word: S _ N (The star at the center of our solar system)",
+          "opts": [
+            "U",
+            "A",
+            "O",
+            "I"
+          ],
+          "ans": 0,
+          "exp": "The word is 'SUN' (Mặt Trời)."
+        }
+      ]
+    },
+    {
+      "id": "riddles-vietnam",
+      "title": "Đố Vui Dân Gian & Phát Triển Trí Tuệ",
+      "category": "Đố vui trí tuệ",
+      "grade": "all",
+      "grade_label": "Mọi lứa tuổi",
+      "difficulty": "Dễ (Junior)",
+      "questions": [
+        {
+          "q": "Cây gì không có lá, không có cành, chỉ có mỗi bông hoa trên đầu?",
+          "opts": [
+            "Cây nến (cây đèn cầy)",
+            "Cây chuối",
+            "Cây nấm",
+            "Cây thông"
+          ],
+          "ans": 0,
+          "exp": "Đó là cây nến (khi thắp sáng ngọn lửa giống bông hoa rực rỡ)."
+        },
+        {
+          "q": "Vừa bằng một thước, nằm góc bờ ao, ai mà đụng vào, phồng tay bỏng mặt. Là con gì?",
+          "opts": [
+            "Con đỉa",
+            "Con lươn",
+            "Con rắn ráo",
+            "Con sâu róm"
+          ],
+          "ans": 3,
+          "exp": "Đó là con sâu róm với lớp lông gây ngứa rát."
+        },
+        {
+          "q": "Cái gì đen khi bạn mua nó, đỏ khi bạn dùng nó và xám xịt khi bạn vứt nó đi?",
+          "opts": [
+            "Bút chì",
+            "Hòn than hoa",
+            "Bao diêm",
+            "Quả ớt"
+          ],
+          "ans": 1,
+          "exp": "Than hoa: khi mua màu đen, khi đốt đỏ rực, khi tàn thành tro màu xám."
+        },
+        {
+          "q": "Con gì đập thì sống, không đập thì chết?",
+          "opts": [
+            "Con tim",
+            "Con ruồi",
+            "Con muỗi",
+            "Con cua"
+          ],
+          "ans": 0,
+          "exp": "Trái tim (con tim) luôn đập từng giây để duy trì sự sống."
+        },
+        {
+          "q": "Nhà Nam có 4 anh em: Xuân, Hạ, Thu. Hỏi người thứ tư tên là gì?",
+          "opts": [
+            "Đông",
+            "Nam",
+            "Bắc",
+            "Tây"
+          ],
+          "ans": 1,
+          "exp": "Câu hỏi đã nêu: 'Nhà Nam có 4 anh em', nên người thứ tư chính là Nam!"
+        }
+      ]
+    },
+    {
+      "id": "opentdb-science",
+      "title": "English Trivia: Khoa học & Tự nhiên (Science & Nature)",
+      "category": "Tiếng Anh & Thế giới",
+      "sub_category": "Khoa học & Tự nhiên (Science & Nature)",
+      "grade": "thcs-thpt",
+      "grade_label": "THCS, THPT & Đại chúng",
+      "difficulty": "Đa cấp độ",
+      "questions": [
+        {
+          "q": "How many officially recognized dwarf planets in the solar system are named after Polynesian deities?",
+          "opts": [
+            "0",
+            "1",
+            "2",
+            "5"
+          ],
+          "ans": 2,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: 2.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the hottest planet in the solar system",
+          "opts": [
+            "Mars",
+            "Jupiter",
+            "Mercury ",
+            "Venus"
+          ],
+          "ans": 3,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Venus.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "In Psychology, which need appears highest in the \"Maslow's hierarchy of needs\" pyramid?",
+          "opts": [
+            "Love",
+            "Physiological",
+            "Esteem",
+            "Safety"
+          ],
+          "ans": 2,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Esteem.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "How many moons does the Earth have?",
+          "opts": [
+            "3",
+            "2",
+            "0",
+            "1"
+          ],
+          "ans": 3,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: 1.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which of the following plastic is commonly used for window frames, gutters and drain pipes?",
+          "opts": [
+            "Polystyrene (PS)",
+            "Polyethylene (PE)",
+            "Polypropylene (PP)",
+            "Polyvinylchloride (PVC) "
+          ],
+          "ans": 3,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: Polyvinylchloride (PVC) .",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "The moons, Miranda, Ariel, Umbriel, Titania and Oberon orbit which planet?",
+          "opts": [
+            "Uranus",
+            "Venus",
+            "Jupiter",
+            "Neptune"
+          ],
+          "ans": 0,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Uranus.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the \"powerhouse\" of the Eukaryotic animal cell?",
+          "opts": [
+            "Chloroplast",
+            "Endoplasmic Reticulum",
+            "Nucleus",
+            "Mitochondria"
+          ],
+          "ans": 3,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Mitochondria.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "To the nearest minute, how long does it take for light to travel from the Sun to the Earth?",
+          "opts": [
+            "2 Minutes",
+            "6 Minutes",
+            "12 Minutes",
+            "8 Minutes"
+          ],
+          "ans": 3,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: 8 Minutes.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What are human nails made of?",
+          "opts": [
+            "Calcium",
+            "Chitin",
+            "Keratin",
+            "Bone"
+          ],
+          "ans": 2,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Keratin.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "How old is the universe?",
+          "opts": [
+            "13.8 Billion Years",
+            "16.2 Billion Years",
+            "7.9 Billion Years",
+            "4.5 Billion Years"
+          ],
+          "ans": 0,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: 13.8 Billion Years.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "The Western Lowland Gorilla is scientifically know as?",
+          "opts": [
+            "Gorilla Beringei Graueri",
+            "Gorilla Gorilla Gorilla",
+            "Gorilla Beringei Beringei",
+            "Gorilla Gorilla Diehli"
+          ],
+          "ans": 1,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: Gorilla Gorilla Gorilla.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which scientific unit is named after an Italian nobleman?",
+          "opts": [
+            "Pascal",
+            "Ohm",
+            "Hertz",
+            "Volt"
+          ],
+          "ans": 3,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: Volt.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What do you study if you are studying entomology?",
+          "opts": [
+            "Fish",
+            "Humans",
+            "the Brain",
+            "Insects"
+          ],
+          "ans": 3,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Insects.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which of the following bones is not in the leg?",
+          "opts": [
+            "Fibula ",
+            "Tibia",
+            "Patella",
+            "Radius"
+          ],
+          "ans": 3,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Radius.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "An organic compound is considered an alcohol if it has what functional group?",
+          "opts": [
+            "Hydroxyl",
+            "Carbonyl",
+            "Aldehyde",
+            "Alkyl"
+          ],
+          "ans": 0,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: Hydroxyl.",
+          "source": "Open Trivia DB"
+        }
+      ]
+    },
+    {
+      "id": "opentdb-math",
+      "title": "English Trivia: Toán học & Logic (Mathematics)",
+      "category": "Tiếng Anh & Thế giới",
+      "sub_category": "Toán học & Logic (Mathematics)",
+      "grade": "thcs-thpt",
+      "grade_label": "THCS, THPT & Đại chúng",
+      "difficulty": "Đa cấp độ",
+      "questions": [
+        {
+          "q": "Which of the following mathematicians made major contributions to game theory?",
+          "opts": [
+            "Leonhard Euler",
+            "Carl Friedrich Gauss",
+            "John Von Neumann",
+            "Stefan Banach"
+          ],
+          "ans": 2,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: John Von Neumann.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which of these numbers is closest to the total number of possible states for an army standard Enigma Machine?",
+          "opts": [
+            "1.58 x 10^24",
+            "1.58 x  10^18",
+            "1.58 x 10^22",
+            "1.58 x 10^20"
+          ],
+          "ans": 3,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: 1.58 x 10^20.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "At what temperature does temp in °C equal temp in °F?",
+          "opts": [
+            "+100",
+            "0",
+            "-40",
+            "+40"
+          ],
+          "ans": 2,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: -40.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the plane curve proposed by Descartes to challenge Fermat's extremum-finding techniques called?",
+          "opts": [
+            "Elliptic Paraboloid of Descartes",
+            "Descarte's Helicoid",
+            "Cartesian Coordinates",
+            "Folium of Descartes"
+          ],
+          "ans": 3,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: Folium of Descartes.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "In Roman Numerals, what does XL equate to?",
+          "opts": [
+            "40",
+            "60",
+            "15",
+            "90"
+          ],
+          "ans": 0,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: 40.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which of the following dice is not a platonic solid?",
+          "opts": [
+            "20-sided die",
+            "10-sided die",
+            "8-sided die",
+            "12-sided die"
+          ],
+          "ans": 1,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: 10-sided die.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the approximate value of mathematical constant e?",
+          "opts": [
+            "1.62",
+            "3.14",
+            "1.41",
+            "2.72"
+          ],
+          "ans": 3,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: 2.72.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the symbol for Displacement?",
+          "opts": [
+            "Dp",
+            "Δr",
+            "r",
+            "dr"
+          ],
+          "ans": 1,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Δr.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the alphanumeric representation of the imaginary number?",
+          "opts": [
+            "x",
+            "e",
+            "n",
+            "i"
+          ],
+          "ans": 3,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: i.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the least number of sides a polygon can have?",
+          "opts": [
+            "7",
+            "2",
+            "1",
+            "3"
+          ],
+          "ans": 3,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: 3.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "How many sides does a pentagon have?",
+          "opts": [
+            "6",
+            "9",
+            "5",
+            "4"
+          ],
+          "ans": 2,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: 5.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What's the square root of 49?",
+          "opts": [
+            "7",
+            "4",
+            "12",
+            "9"
+          ],
+          "ans": 0,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: 7.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the correct order of operations for solving equations?",
+          "opts": [
+            "The order in which the operations are written.",
+            "Parentheses, Exponents, Addition, Substraction, Multiplication, Division",
+            "Parentheses, Exponents, Multiplication, Division, Addition, Subtraction",
+            "Addition, Multiplication, Division, Subtraction, Addition, Parentheses"
+          ],
+          "ans": 2,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Parentheses, Exponents, Multiplication, Division, Addition, Subtraction.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "How many sides does a heptagon have?",
+          "opts": [
+            "7",
+            "5",
+            "8",
+            "6"
+          ],
+          "ans": 0,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: 7.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is a polygon with eight sides called?",
+          "opts": [
+            "Nanagon",
+            "Heptagon",
+            "Hexagon",
+            "Octagon"
+          ],
+          "ans": 3,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Octagon.",
+          "source": "Open Trivia DB"
+        }
+      ]
+    },
+    {
+      "id": "opentdb-geography",
+      "title": "English Trivia: Địa lý Thế giới (Geography)",
+      "category": "Tiếng Anh & Thế giới",
+      "sub_category": "Địa lý Thế giới (Geography)",
+      "grade": "thcs-thpt",
+      "grade_label": "THCS, THPT & Đại chúng",
+      "difficulty": "Đa cấp độ",
+      "questions": [
+        {
+          "q": "What tiny principality lies between Spain and France?",
+          "opts": [
+            "Monaco",
+            "San Marino",
+            "Andorra",
+            "Liechtenstein"
+          ],
+          "ans": 2,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Andorra.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "How tall is One World Trade Center in New York City?",
+          "opts": [
+            "1,960 ft",
+            "1,225 ft",
+            "1,888 ft",
+            "1,776 ft"
+          ],
+          "ans": 3,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: 1,776 ft.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the capital of Seychelles?",
+          "opts": [
+            "Luanda",
+            "Tripoli",
+            "N'Djamena",
+            "Victoria"
+          ],
+          "ans": 3,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Victoria.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "The Japanese district Akihabara is also known by what nickname?",
+          "opts": [
+            "Moon Walk River",
+            "Big Eyes",
+            "Otaku Central ",
+            "Electric Town"
+          ],
+          "ans": 3,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Electric Town.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "How many time zones are in Russia?",
+          "opts": [
+            "11",
+            "5",
+            "8",
+            "2"
+          ],
+          "ans": 0,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: 11.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the longest river in Europe?",
+          "opts": [
+            "Volga",
+            "Rhine",
+            "Danube",
+            "Thames"
+          ],
+          "ans": 0,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Volga.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which of the following Arab countries does NOT have a flag containing only Pan-Arab colours?",
+          "opts": [
+            "United Arab Emirates",
+            "Kuwait",
+            "Qatar",
+            "Jordan"
+          ],
+          "ans": 2,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Qatar.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "The Principality of Sealand is an unrecognized micronation off the coast of what country?",
+          "opts": [
+            "Austrailia",
+            "Argentina",
+            "Japan",
+            "The United Kingdom"
+          ],
+          "ans": 3,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: The United Kingdom.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which European city is known as the \"City of Light\"?",
+          "opts": [
+            "London",
+            "Madrid",
+            "Rome",
+            "Paris"
+          ],
+          "ans": 3,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Paris.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Bridgetown is the capital of which island country in the Carribean?",
+          "opts": [
+            "Barbados",
+            "Cuba",
+            "Dominica",
+            "Jamaica‎"
+          ],
+          "ans": 0,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Barbados.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the region conjoining Pakistan, India, and China with unknown leadership called?",
+          "opts": [
+            "Quin",
+            "Gibraltar",
+            "Andorra",
+            "Kashmir"
+          ],
+          "ans": 3,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Kashmir.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which of these is NOT an Australian state or territory?",
+          "opts": [
+            "Queensland",
+            "Alberta",
+            "Victoria",
+            "New South Wales"
+          ],
+          "ans": 1,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Alberta.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "About how many countries are there in the world?",
+          "opts": [
+            "200",
+            "300",
+            "100",
+            "500"
+          ],
+          "ans": 0,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: 200.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is Russia's second-largest city?",
+          "opts": [
+            "Saint Petersburg",
+            "Minsk",
+            "Nizhny Novgorod",
+            "Vladivostok"
+          ],
+          "ans": 0,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Saint Petersburg.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which of these African countries displays a gun on their flag?",
+          "opts": [
+            "Mozambique",
+            "Nigeria",
+            "Ethiopia",
+            "Uganda"
+          ],
+          "ans": 0,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: Mozambique.",
+          "source": "Open Trivia DB"
+        }
+      ]
+    },
+    {
+      "id": "opentdb-history",
+      "title": "English Trivia: Lịch sử Thế giới (History)",
+      "category": "Tiếng Anh & Thế giới",
+      "sub_category": "Lịch sử Thế giới (History)",
+      "grade": "thcs-thpt",
+      "grade_label": "THCS, THPT & Đại chúng",
+      "difficulty": "Đa cấp độ",
+      "questions": [
+        {
+          "q": "Who discovered Penicillin?",
+          "opts": [
+            "Alfred Nobel",
+            "Marie Curie",
+            "Louis Pasteur",
+            "Alexander Flemming"
+          ],
+          "ans": 3,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Alexander Flemming.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "The crown of the Empire State Building was originally built for what purpose?",
+          "opts": [
+            "Flag Pole",
+            "Antennae",
+            "Airship Dock",
+            "Lightning Rod"
+          ],
+          "ans": 2,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Airship Dock.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "In which war did the atomic bombings of Hiroshima and Nagasaki occur?",
+          "opts": [
+            "First Sino-Japanese War",
+            "Russo-Japanese War",
+            "World War II",
+            "World War I"
+          ],
+          "ans": 2,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: World War II.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "In which year did the Tokyo Subway Sarin Attack occur?",
+          "opts": [
+            "2011",
+            "1991",
+            "2001",
+            "1995"
+          ],
+          "ans": 3,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: 1995.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which of the following snipers has the highest amount of confirmed kills?",
+          "opts": [
+            "Vasily Zaytsev",
+            "Craig Harrison",
+            "Chris Kyle",
+            "Simo Häyhä"
+          ],
+          "ans": 3,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Simo Häyhä.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What year is considered to be the year that the British Empire ended?",
+          "opts": [
+            "1971",
+            "1981",
+            "1997",
+            "1986"
+          ],
+          "ans": 2,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: 1997.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Who was the leader of the Communist Party of Yugoslavia ?",
+          "opts": [
+            "Josip Broz Tito",
+            "Aleskandar Petrovic",
+            "Karadjordje Petrovic",
+            "Milos Obilic"
+          ],
+          "ans": 0,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Josip Broz Tito.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which Las Vegas casino was originally constructed and operated by mobster Bugsy Siegel?",
+          "opts": [
+            "The Sahara",
+            "The Flamingo",
+            "The MGM Grand",
+            "The Sands"
+          ],
+          "ans": 1,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: The Flamingo.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Who was the main developer of the Suez Canal?",
+          "opts": [
+            "John Milton",
+            "Ferdinand de Lesseps",
+            "Johann Lukas von Hildebrandt",
+            "Louis-Eugène Cavaignac"
+          ],
+          "ans": 1,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Ferdinand de Lesseps.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which U.S. president was said to have been too honest to lie to his father about chopping down a cherry tree?",
+          "opts": [
+            "James Monroe",
+            "George Washington",
+            "Abraham Lincoln",
+            "Thomas Jefferson"
+          ],
+          "ans": 1,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: George Washington.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What was Manfred von Richthofen's nickname?",
+          "opts": [
+            "The Red Baron",
+            "The High Flying Ace",
+            "The Blue Serpent ",
+            "The Germany Gunner"
+          ],
+          "ans": 0,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: The Red Baron.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "The seed drill was invented by which British inventor?",
+          "opts": [
+            "Jethro Tull",
+            "Isaac Newton",
+            "J.J Thomson",
+            "Charles Babbage"
+          ],
+          "ans": 0,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Jethro Tull.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What was the code name for the Allied invasion of Southern France on August 15th, 1944?",
+          "opts": [
+            "Operation Torch",
+            "Operation Market Garden",
+            "Operation Dragoon",
+            "Operation Overlord"
+          ],
+          "ans": 2,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: Operation Dragoon.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "The Little Entente was an alliance formed against which nation?",
+          "opts": [
+            "France",
+            "Prussia",
+            "Hungary",
+            "Germany"
+          ],
+          "ans": 2,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Hungary.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "The Herero genocide was perpetrated in Africa by which of the following colonial nations?",
+          "opts": [
+            "Germany",
+            "Britain",
+            "France",
+            "Belgium"
+          ],
+          "ans": 0,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Germany.",
+          "source": "Open Trivia DB"
+        }
+      ]
+    },
+    {
+      "id": "opentdb-animals",
+      "title": "English Trivia: Động vật & Sinh học (Animals)",
+      "category": "Tiếng Anh & Thế giới",
+      "sub_category": "Động vật & Sinh học (Animals)",
+      "grade": "thcs-thpt",
+      "grade_label": "THCS, THPT & Đại chúng",
+      "difficulty": "Đa cấp độ",
+      "questions": [
+        {
+          "q": "The now extinct species \"Thylacine\" was native to where?",
+          "opts": [
+            "Tasmania, Australia",
+            "Oregon, United States",
+            "Baluchistan, Pakistan",
+            "Wallachia, Romania"
+          ],
+          "ans": 0,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Tasmania, Australia.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "To which biological phylum do all mammals, birds and reptiles belong?",
+          "opts": [
+            "Chordata",
+            "Echinodermata",
+            "Placazoa",
+            "Annelida"
+          ],
+          "ans": 0,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: Chordata.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What type of creature is a Bonobo?",
+          "opts": [
+            "Ape",
+            "Wildcat",
+            "Lion",
+            "Parrot"
+          ],
+          "ans": 0,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: Ape.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the scientific name of the cheetah?",
+          "opts": [
+            "Lynx rufus",
+            "Acinonyx jubatus",
+            "Panthera onca",
+            "Felis catus"
+          ],
+          "ans": 1,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: Acinonyx jubatus.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What colour is the female blackbird?",
+          "opts": [
+            "Brown",
+            "White",
+            "Yellow",
+            "Black"
+          ],
+          "ans": 0,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Brown.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the name of a rabbit's abode?",
+          "opts": [
+            "Dray",
+            "Nest",
+            "Burrow",
+            "Den"
+          ],
+          "ans": 2,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Burrow.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the name for a male bee that comes from an unfertilized egg?",
+          "opts": [
+            "Drone",
+            "Soldier",
+            "Male",
+            "Worker"
+          ],
+          "ans": 0,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Drone.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the collective noun for a group of crows?",
+          "opts": [
+            "Murder",
+            "Gaggle",
+            "Pack",
+            "Herd"
+          ],
+          "ans": 0,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Murder.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the common term for bovine spongiform encephalopathy (BSE)?",
+          "opts": [
+            "Weil's disease",
+            "Mad Cow disease",
+            "Foot-and-mouth disease",
+            "Milk fever"
+          ],
+          "ans": 1,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Mad Cow disease.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the scientific name for the Bald Eagle?",
+          "opts": [
+            "Tyto Alba",
+            "Cyanocitta Cristata",
+            "Haliaeetus Leucocephalus ",
+            "Aquila Chrysaetos"
+          ],
+          "ans": 2,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: Haliaeetus Leucocephalus .",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Snakes and lizards are known to flick their tongue, this behavior is to?",
+          "opts": [
+            "Taste the sweet air",
+            "Capture scent particles",
+            "Attract female mates",
+            "Threaten other species"
+          ],
+          "ans": 1,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Capture scent particles.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which of these animals are not real?",
+          "opts": [
+            "Tasmanian Devil",
+            "Sea Dragon",
+            "Nemean Lion",
+            "Giant Squid"
+          ],
+          "ans": 2,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Nemean Lion.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Cashmere is the wool from which kind of animal?",
+          "opts": [
+            "Goat",
+            "Llama",
+            "Sheep",
+            "Camel"
+          ],
+          "ans": 0,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Goat.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the collective noun for bears?",
+          "opts": [
+            "Drove",
+            "Husk",
+            "Tribe",
+            "Sloth"
+          ],
+          "ans": 3,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Sloth.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the collective noun for vultures?",
+          "opts": [
+            "Gaze",
+            "Wake",
+            "Building",
+            "Ambush"
+          ],
+          "ans": 1,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: Wake.",
+          "source": "Open Trivia DB"
+        }
+      ]
+    },
+    {
+      "id": "opentdb-general",
+      "title": "English Trivia: Kiến thức Chung Quốc tế (General Knowledge)",
+      "category": "Tiếng Anh & Thế giới",
+      "sub_category": "Kiến thức Chung Quốc tế (General Knowledge)",
+      "grade": "thcs-thpt",
+      "grade_label": "THCS, THPT & Đại chúng",
+      "difficulty": "Đa cấp độ",
+      "questions": [
+        {
+          "q": "Terry Gilliam was an animator that worked with which British comedy group?",
+          "opts": [
+            "The Goodies‎",
+            "The Penny Dreadfuls",
+            "The League of Gentlemen‎",
+            "Monty Python"
+          ],
+          "ans": 3,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Monty Python.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What does VR stand for?",
+          "opts": [
+            "Visual Recognition",
+            "Virtual Reality",
+            "Voice Recognition",
+            "Very Real"
+          ],
+          "ans": 1,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Virtual Reality.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Who is considered the \"Father of Modern Philosophy\"?",
+          "opts": [
+            "Albert Einstein",
+            "Plato",
+            "Antoine Lavoiser",
+            "René Descartes"
+          ],
+          "ans": 3,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: René Descartes.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What technology is named after a tenth-century ruler of Denmark and Norway?",
+          "opts": [
+            "Internet",
+            "Bluetooth",
+            "Wi-Fi",
+            "GPS"
+          ],
+          "ans": 1,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Bluetooth.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "In DC comics where does the Green Arrow (Oliver Queen) live?",
+          "opts": [
+            "Central City",
+            "Metropolis",
+            "Star City",
+            "Gotham City"
+          ],
+          "ans": 2,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Star City.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What is the shortest month of the year?",
+          "opts": [
+            "September",
+            "April",
+            "December",
+            "February"
+          ],
+          "ans": 3,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: February.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What Latin phrase roughly translates to \"seize the day\"?",
+          "opts": [
+            "Plus ultra",
+            "Sic semper tyrannis",
+            "Memento mori",
+            "Carpe diem"
+          ],
+          "ans": 3,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Carpe diem.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which sign of the zodiac comes between Virgo and Scorpio?",
+          "opts": [
+            "Capricorn",
+            "Taurus",
+            "Libra",
+            "Gemini"
+          ],
+          "ans": 2,
+          "difficulty": "Dễ (Junior)",
+          "raw_difficulty": "easy",
+          "exp": "Đáp án đúng là: Libra.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What do the Dutch call their language?",
+          "opts": [
+            "Dansk",
+            "Hollander",
+            "Nederlands",
+            "Deutsch"
+          ],
+          "ans": 2,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Nederlands.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which one of these Swedish companies was founded in 1943?",
+          "opts": [
+            "Lindex",
+            "IKEA",
+            "Clas Ohlson",
+            "H & M"
+          ],
+          "ans": 1,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: IKEA.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which of these Nicktoons were NOT originally a short on Oh Yeah! Cartoons before becoming their own series?",
+          "opts": [
+            "Danny Phantom",
+            "ChalkZone",
+            "My Life as a Teenage Robot",
+            "The Fairly OddParents"
+          ],
+          "ans": 0,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Danny Phantom.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "What English word means to \"think deeply\"?",
+          "opts": [
+            "Condensate",
+            "Confiscate",
+            "Constipate",
+            "Contemplate"
+          ],
+          "ans": 3,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: Contemplate.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "The word \"astasia\" means which of the following?",
+          "opts": [
+            "A feverish desire to rip one's clothes off",
+            "The inability to concentrate on anything",
+            "The inability to make decisions",
+            "The inability to stand up"
+          ],
+          "ans": 3,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: The inability to stand up.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Frank Lloyd Wright was the architect behind what famous building?",
+          "opts": [
+            "Sydney Opera House",
+            "The Guggenheim",
+            "The Space Needle",
+            "Villa Savoye"
+          ],
+          "ans": 1,
+          "difficulty": "Trung bình",
+          "raw_difficulty": "medium",
+          "exp": "Đáp án đúng là: The Guggenheim.",
+          "source": "Open Trivia DB"
+        },
+        {
+          "q": "Which of the following languages does NOT use gender as a part of its grammar?",
+          "opts": [
+            "German",
+            "Turkish",
+            "Danish",
+            "Polish"
+          ],
+          "ans": 1,
+          "difficulty": "Khó",
+          "raw_difficulty": "hard",
+          "exp": "Đáp án đúng là: Turkish.",
+          "source": "Open Trivia DB"
+        }
+      ]
+    }
+  ]
+}
