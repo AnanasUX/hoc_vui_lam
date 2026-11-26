@@ -1,6 +1,6 @@
 {
-  "total_banks": 18,
-  "total_questions": 150,
+  "total_banks": 19,
+  "total_questions": 156,
   "banks": [
     {
       "id": "general-easy",
@@ -2105,6 +2105,82 @@
           "raw_difficulty": "hard",
           "exp": "Đáp án đúng là: Turkish.",
           "source": "Open Trivia DB"
+        }
+      ]
+    },
+    {
+      "id": "proverbs-vn-idioms",
+      "title": "Thành Ngữ & Ca Dao Tục Ngữ Việt Nam",
+      "category": "Tiếng Việt",
+      "grade": "lop-3-5",
+      "grade_label": "Lớp 3 - 5 & THCS",
+      "difficulty": "Dễ (Junior)",
+      "questions": [
+        {
+          "q": "Điền từ còn thiếu vào câu thành ngữ: 'Uống nước nhớ ...'",
+          "opts": [
+            "nguồn",
+            "sông",
+            "biển",
+            "suối"
+          ],
+          "ans": 0,
+          "exp": "'Uống nước nhớ nguồn' là truyền thống đạo lý tốt đẹp của dân tộc ta."
+        },
+        {
+          "q": "Điền từ còn thiếu: 'Học ... không tày học bạn'",
+          "opts": [
+            "thầy",
+            "sách",
+            "mẹ",
+            "cha"
+          ],
+          "ans": 0,
+          "exp": "Bên cạnh việc nghe thầy cô giảng dạy, việc trao đổi và học hỏi từ bạn bè là rất quan trọng."
+        },
+        {
+          "q": "Chọn từ điền vào chỗ chấm: 'Gần mực thì đen, gần ... thì rạng'",
+          "opts": [
+            "đèn",
+            "lửa",
+            "nắng",
+            "sao"
+          ],
+          "ans": 0,
+          "exp": "'Gần đèn thì rạng' khuyên ta nên chọn bạn tốt, môi trường lành mạnh để học tập và rèn luyện."
+        },
+        {
+          "q": "Thành ngữ 'Ăn quả nhớ kẻ trồng cây' khuyên chúng ta điều gì?",
+          "opts": [
+            "Lòng biết ơn",
+            "Lòng dũng cảm",
+            "Tính tiết kiệm",
+            "Tính cẩn thận"
+          ],
+          "ans": 0,
+          "exp": "Thành ngữ giáo dục lòng biết ơn và sự tri ân thế hệ đi trước."
+        },
+        {
+          "q": "Thành ngữ 'Có chí thì nên' có ý nghĩa tương đương với câu nào?",
+          "opts": [
+            "Có công mài sắt, có ngày nên kim",
+            "Đi một ngày đàng, học một sàng khôn",
+            "Học ăn học nói",
+            "Lá lành đùm lá rách"
+          ],
+          "ans": 0,
+          "exp": "Cả hai câu đều ca ngợi sự kiên trì, bền bỉ và ý chí vượt khó."
+        },
+        {
+          "q": "Câu 'Lá lành đùm lá rách' thể hiện truyền thống đạo đức nào của dân tộc ta?",
+          "opts": [
+            "Tương thân tương ái",
+            "Hiếu thảo",
+            "Cần cù",
+            "Yêu thiên nhiên"
+          ],
+          "ans": 0,
+          "exp": "Truyền thống đùm bọc, giúp đỡ người hoạn nạn khó khăn gọi là tương thân tương ái."
         }
       ]
     }

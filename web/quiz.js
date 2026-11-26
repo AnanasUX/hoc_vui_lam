@@ -667,6 +667,333 @@ function renderDaily(stage) {
   });
 }
 
+let learningGamesData = {
+  matching_sets: [
+    {
+      id: "match-animals-en",
+      title: "Ghép Thú Cưng & Động Vật (Anh - Việt)",
+      category: "Tiếng Anh",
+      pairs: [
+        { left: "Dog", right: "Con chó" },
+        { left: "Cat", right: "Con mèo" },
+        { left: "Elephant", right: "Con voi" },
+        { left: "Tiger", right: "Con hổ" },
+        { left: "Lion", right: "Sư tử" },
+        { left: "Monkey", right: "Con khỉ" },
+        { left: "Rabbit", right: "Con thỏ" },
+        { left: "Bear", right: "Con gấu" },
+      ],
+    },
+  ],
+  sentence_puzzles: [
+    {
+      id: "scramble-1",
+      lang: "vi",
+      title: "Ghép câu Tiếng Việt: Lòng biết ơn",
+      words: ["Chúng", "em", "luôn", "kính", "trọng", "và", "biết", "ơn", "thầy", "cô."],
+      hint: "Bắt đầu bằng từ 'Chúng em'",
+    },
+  ],
+  wiki_facts: [],
+};
+
+async function loadLearningGames() {
+  try {
+    const res = await fetch("data/learning_games.json");
+    if (res.ok) {
+      const data = await res.json();
+      if (data) learningGamesData = data;
+    }
+  } catch (e) {
+    console.warn("Could not load learning games data", e);
+  }
+}
+
+/* MODE 5: CARD MATCHING GAME (ĐẤU TRƯỜNG GHÉP THẺ) */
+function renderMatchGame(stage) {
+  clearInterval(chronoInterval);
+  const sets = learningGamesData.matching_sets || [];
+  if (!sets.length) {
+    stage.innerHTML = `<p>Đang chuẩn bị bộ thẻ ghép...</p>`;
+    return;
+  }
+
+  let currentSetIdx = 0;
+  let cards = [];
+  let selected = [];
+  let matchedCount = 0;
+  let moves = 0;
+  let startTime = Date.now();
+
+  function startSet(idx) {
+    currentSetIdx = idx;
+    const s = sets[idx];
+    selected = [];
+    matchedCount = 0;
+    moves = 0;
+    startTime = Date.now();
+
+    // Create cards pool
+    const pool = [];
+    s.pairs.forEach((p, pi) => {
+      pool.push({ id: `l-${pi}`, pairId: pi, text: p.left, side: "L" });
+      pool.push({ id: `r-${pi}`, pairId: pi, text: p.right, side: "R" });
+    });
+    // Shuffle
+    cards = pool.sort(() => 0.5 - Math.random());
+
+    drawBoard();
+  }
+
+  function drawBoard() {
+    const s = sets[currentSetIdx];
+    const isCompleted = matchedCount === s.pairs.length;
+
+    stage.innerHTML = `
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:12px;">
+        <div>
+          <h2 style="margin:0 0 4px;">🃏 Đấu Trường Ghép Thẻ Thông Minh</h2>
+          <p style="color:var(--muted);margin:0;font-size:0.9rem;">Lật 2 thẻ có nghĩa tương ứng để tạo thành cặp ghép đúng!</p>
+        </div>
+        <div style="display:flex;gap:8px;align-items:center;">
+          <select id="matchSetSelect" style="padding:6px 12px;border-radius:8px;border:1px solid var(--border);background:var(--surface-2);color:var(--text);font-weight:600;">
+            ${sets.map((item, i) => `<option value="${i}" ${i === currentSetIdx ? "selected" : ""}>${escapeHtml(item.title)}</option>`).join("")}
+          </select>
+          <span class="hud-pill">Số lượt lật: ${moves}</span>
+        </div>
+      </div>
+
+      ${
+        isCompleted
+          ? `
+          <div style="text-align:center;padding:32px 0;">
+            <div style="font-size:3.5rem;">🎉</div>
+            <h2 style="margin:8px 0;">Xuất sắc! Bạn đã ghép đúng toàn bộ!</h2>
+            <p style="font-size:1.1rem;color:var(--muted);">Thời gian hoàn thành: <strong>${Math.round((Date.now() - startTime) / 1000)} giây</strong> • <strong>+50 XP</strong></p>
+            <div style="display:flex;gap:10px;justify-content:center;margin-top:18px;">
+              <button class="btn btn-primary" id="matchReplayBtn">↺ Chơi lại bộ này</button>
+              <button class="btn" id="matchNextBtn">Chơi bộ tiếp theo →</button>
+            </div>
+          </div>
+        `
+          : `
+          <div class="match-grid">
+            ${cards
+              .map(
+                (c, i) => `
+              <div class="match-card ${c.matched ? "matched" : ""} ${selected.includes(i) ? "selected" : ""}" data-idx="${i}">
+                ${escapeHtml(c.text)}
+              </div>
+            `
+              )
+              .join("")}
+          </div>
+        `
+      }
+    `;
+
+    const setSelect = stage.querySelector("#matchSetSelect");
+    if (setSelect) {
+      setSelect.addEventListener("change", () => startSet(parseInt(setSelect.value, 10)));
+    }
+
+    if (isCompleted) {
+      stage.querySelector("#matchReplayBtn").addEventListener("click", () => startSet(currentSetIdx));
+      stage.querySelector("#matchNextBtn").addEventListener("click", () => startSet((currentSetIdx + 1) % sets.length));
+      return;
+    }
+
+    stage.querySelectorAll(".match-card").forEach((cardEl) => {
+      cardEl.addEventListener("click", () => {
+        const cIdx = parseInt(cardEl.dataset.idx, 10);
+        if (cards[cIdx].matched || selected.includes(cIdx)) return;
+
+        if (selected.length === 0) {
+          selected = [cIdx];
+          drawBoard();
+        } else if (selected.length === 1) {
+          selected.push(cIdx);
+          moves++;
+          const c1 = cards[selected[0]];
+          const c2 = cards[selected[1]];
+
+          if (c1.pairId === c2.pairId && c1.side !== c2.side) {
+            // Match found!
+            c1.matched = true;
+            c2.matched = true;
+            matchedCount++;
+            playTone(true);
+            showToast("✨ Ghép cặp chính xác!");
+            if (matchedCount === s.pairs.length) {
+              addXp(50, `Ghép thẻ: ${s.title}`);
+            }
+            selected = [];
+            drawBoard();
+          } else {
+            // Wrong match
+            playTone(false);
+            drawBoard();
+            setTimeout(() => {
+              selected = [];
+              drawBoard();
+            }, 600);
+          }
+        }
+      });
+    });
+  }
+
+  startSet(0);
+}
+
+/* MODE 6: SENTENCE BUILDER (SẮP XẾP CÂU) */
+function renderSentenceBuilder(stage) {
+  clearInterval(chronoInterval);
+  const puzzles = learningGamesData.sentence_puzzles || [];
+  if (!puzzles.length) {
+    stage.innerHTML = `<p>Đang chuẩn bị bài tập ghép câu...</p>`;
+    return;
+  }
+
+  let puzzleIdx = 0;
+  let placed = [];
+  let available = [];
+
+  function loadPuzzle(idx) {
+    puzzleIdx = idx;
+    const p = puzzles[idx];
+    placed = [];
+    available = [...p.words].sort(() => 0.5 - Math.random());
+    draw();
+  }
+
+  function draw() {
+    const p = puzzles[puzzleIdx];
+    const isFull = placed.length === p.words.length;
+
+    stage.innerHTML = `
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:12px;">
+        <div>
+          <h2 style="margin:0 0 4px;">🧩 Ghép Câu Ngữ Pháp Chuẩn</h2>
+          <p style="color:var(--muted);margin:0;font-size:0.9rem;">Chạm vào các từ bên dưới để ghép thành câu hoàn chỉnh đúng trật tự ngữ pháp.</p>
+        </div>
+        <span class="hud-pill">Bài ${puzzleIdx + 1} / ${puzzles.length}</span>
+      </div>
+
+      <div style="background:var(--primary-soft);padding:10px 14px;border-radius:10px;margin-bottom:14px;font-size:0.92rem;">
+        💡 <strong>Gợi ý:</strong> ${escapeHtml(p.hint || p.title)}
+      </div>
+
+      <div style="font-size:0.88rem;font-weight:700;margin-bottom:4px;">Câu của bạn (Chạm vào từ để gỡ bỏ):</div>
+      <div class="sentence-drop-area" id="placedArea">
+        ${
+          placed.length === 0
+            ? `<span style="color:var(--muted);font-style:italic;">Chưa có từ nào. Chạm vào các từ bên dưới để ghép vào đây...</span>`
+            : placed.map((w, i) => `<span class="word-bubble" data-p="${i}">${escapeHtml(w)} ✕</span>`).join("")
+        }
+      </div>
+
+      <div style="font-size:0.88rem;font-weight:700;margin:14px 0 4px;">Ngân hàng từ vựng:</div>
+      <div class="sentence-word-bank" id="availArea">
+        ${available.map((w, i) => `<span class="word-bubble" data-a="${i}">${escapeHtml(w)}</span>`).join("")}
+      </div>
+
+      <div id="sentenceResult" style="margin:14px 0;"></div>
+
+      <div style="display:flex;gap:10px;margin-top:20px;flex-wrap:wrap;">
+        <button class="btn btn-primary" id="checkSentenceBtn" ${!isFull ? "disabled" : ""}>✔️ Kiểm tra câu</button>
+        <button class="btn" id="resetSentenceBtn">↺ Đặt lại từ đầu</button>
+        <button class="btn" id="nextSentenceBtn">Bài tiếp theo →</button>
+      </div>
+    `;
+
+    // Click to remove placed word
+    stage.querySelectorAll("#placedArea .word-bubble").forEach((el) => {
+      el.addEventListener("click", () => {
+        const pIdx = parseInt(el.dataset.p, 10);
+        const [w] = placed.splice(pIdx, 1);
+        available.push(w);
+        draw();
+      });
+    });
+
+    // Click to place available word
+    stage.querySelectorAll("#availArea .word-bubble").forEach((el) => {
+      el.addEventListener("click", () => {
+        const aIdx = parseInt(el.dataset.a, 10);
+        const [w] = available.splice(aIdx, 1);
+        placed.push(w);
+        draw();
+      });
+    });
+
+    // Check Button
+    stage.querySelector("#checkSentenceBtn").addEventListener("click", () => {
+      const targetStr = p.words.join(" ").trim();
+      const userStr = placed.join(" ").trim();
+      const resEl = stage.querySelector("#sentenceResult");
+
+      if (userStr === targetStr) {
+        playTone(true);
+        addXp(30, `Ghép câu: ${p.title}`);
+        resEl.innerHTML = `
+          <div class="explain-box" style="border-color:#10b981;background:rgba(16,185,129,0.12);color:#047857;">
+            <strong>🎉 Chính xác! (+30 XP)</strong> Câu đúng: <em>"${escapeHtml(targetStr)}"</em>
+          </div>
+        `;
+      } else {
+        playTone(false);
+        resEl.innerHTML = `
+          <div class="explain-box" style="border-color:#ef4444;background:rgba(239,68,68,0.12);color:#b91c1c;">
+            <strong>❌ Thứ tự chưa chính xác!</strong> Hãy thử sắp xếp lại các từ nhé.
+          </div>
+        `;
+      }
+    });
+
+    stage.querySelector("#resetSentenceBtn").addEventListener("click", () => loadPuzzle(puzzleIdx));
+    stage.querySelector("#nextSentenceBtn").addEventListener("click", () => loadPuzzle((puzzleIdx + 1) % puzzles.length));
+  }
+
+  loadPuzzle(0);
+}
+
+/* MODE 7: WIKI ENCYCLOPEDIA FACTS (EM CÓ BIẾT?) */
+function renderWikiFacts(stage) {
+  clearInterval(chronoInterval);
+  const facts = learningGamesData.wiki_facts || [];
+
+  stage.innerHTML = `
+    <div style="margin-bottom:16px;">
+      <h2 style="margin:0 0 4px;">💡 Em Có Biết? – Kho Tri Thức Bách Khoa</h2>
+      <p style="color:var(--muted);margin:0;font-size:0.9rem;">
+        Khám phá các sự thật khoa học, thiên văn, lịch sử và địa lý kỳ thú được thu thập từ Bách khoa toàn thư.
+      </p>
+    </div>
+
+    <div class="fact-grid">
+      ${facts
+        .map(
+          (f) => `
+        <div class="fact-card">
+          <div>
+            <span style="font-size:0.75rem;font-weight:700;padding:2px 8px;border-radius:999px;background:var(--primary-soft);color:var(--primary);">${escapeHtml(f.category)}</span>
+            <h3 style="margin:8px 0 6px;">${escapeHtml(f.title)}</h3>
+            <p>${escapeHtml(f.summary)}</p>
+          </div>
+          ${
+            f.url
+              ? `<a href="${escapeHtml(f.url)}" target="_blank" rel="noopener noreferrer" style="font-size:0.84rem;color:var(--primary);font-weight:600;text-decoration:none;">Đọc thêm trên Wikipedia ↗</a>`
+              : ""
+          }
+        </div>
+      `
+        )
+        .join("")}
+    </div>
+  `;
+}
+
 async function init() {
   initThemeAndSound();
   renderHud();
@@ -675,10 +1002,14 @@ async function init() {
   const tabs = document.querySelectorAll("#modeTabs .chip");
 
   await loadDynamicBanks();
+  await loadLearningGames();
 
   function switchMode(mode) {
     tabs.forEach((t) => t.classList.toggle("active", t.dataset.mode === mode));
     if (mode === "mcq") renderMcqHome(stage);
+    else if (mode === "match") renderMatchGame(stage);
+    else if (mode === "sentence") renderSentenceBuilder(stage);
+    else if (mode === "facts") renderWikiFacts(stage);
     else if (mode === "chrono") renderChrono(stage);
     else if (mode === "math24") renderMath24(stage);
     else if (mode === "daily") renderDaily(stage);
@@ -697,4 +1028,5 @@ async function init() {
 }
 
 init();
+
 

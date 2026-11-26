@@ -108,6 +108,34 @@ def main():
                 quiz_banks.append(bank)
         print(f"Loaded OpenTDB banks: {len(opentdb_data.get('banks', []))}")
 
+    # 3. Load Extra Learning Data (Wikipedia, Idioms, Matching, Sentence, Mock Exams)
+    extra_file = Path("scraped_data/extra_learning_data.json")
+    if extra_file.exists():
+        extra_data = json.loads(extra_file.read_text(encoding="utf-8"))
+        if "idioms_quiz_bank" in extra_data:
+            quiz_banks.append(extra_data["idioms_quiz_bank"])
+
+        # Save learning games data
+        games_payload = {
+            "wiki_facts": extra_data.get("wiki_facts", []),
+            "proverbs": extra_data.get("proverbs", []),
+            "matching_sets": extra_data.get("matching_sets", []),
+            "sentence_puzzles": extra_data.get("sentence_puzzles", [])
+        }
+        Path("web/data/learning_games.json").write_text(
+            json.dumps(games_payload, ensure_ascii=False, indent=2),
+            encoding="utf-8"
+        )
+        print(f"Saved learning games data ({len(games_payload['matching_sets'])} match sets, {len(games_payload['wiki_facts'])} wiki facts) to web/data/learning_games.json")
+
+        # Save mock exams data
+        mock_exams = extra_data.get("mock_exams", [])
+        Path("web/data/mock_exams.json").write_text(
+            json.dumps({"mock_exams": mock_exams}, ensure_ascii=False, indent=2),
+            encoding="utf-8"
+        )
+        print(f"Saved {len(mock_exams)} mock exams to web/data/mock_exams.json")
+
     # Standardize and save quiz_banks.json
     total_q = sum(len(b["questions"]) for b in quiz_banks)
     payload = {
@@ -124,3 +152,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phòng Luyện Thi Chuẩn – Học Thông Minh</title>
+  <meta name="description" content="Phòng thi thử trực tuyến với đồng hồ đếm ngược, chấm điểm thang 10 tự động và cấp Giấy Khen vinh danh A4." />
+  <link rel="stylesheet" href="fonts/fonts.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="header-left">
+        <a class="brand" href="index.html">
+          <span class="brand-badge">HT</span>
+          <span>Học Thông Minh</span>
+        </a>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:10px;">
+        <a class="btn" href="index.html">← 60 Công cụ</a>
+        <a class="btn" href="quiz.html">🎯 Quiz &amp; Games</a>
+        <button class="icon-btn" id="themeToggleBtn" title="Đổi giao diện Sáng / Tối">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" id="examContainer">
+    <div style="text-align:center;padding:40px 0;color:var(--muted);">Đang tải phòng thi...</div>
+  </main>
+
+  <div class="toast" id="toast"></div>
+  <script src="exam.js"></script>
+</body>
+</html>

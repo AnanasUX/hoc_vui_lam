@@ -1,0 +1,230 @@
+{
+  "mock_exams": [
+    {
+      "id": "mock-toan-hk1-lop5",
+      "title": "Đề Khảo Sát Năng Lực Toán Lớp 5 (Học kỳ 1)",
+      "grade": "Lớp 5",
+      "subject": "Toán học",
+      "time_minutes": 35,
+      "questions": [
+        {
+          "id": "q1",
+          "q": "Chữ số 7 trong số thập phân 185,274 có giá trị là:",
+          "opts": [
+            "7/10",
+            "7/100",
+            "7/1000",
+            "7 đơn vị"
+          ],
+          "ans": 1,
+          "points": 1.0,
+          "exp": "Chữ số 7 nằm ở hàng phần trăm nên có giá trị là 7/100."
+        },
+        {
+          "id": "q2",
+          "q": "Viết hỗn số 3 và 4/5 thành số thập phân ta được:",
+          "opts": [
+            "3,4",
+            "3,8",
+            "3,45",
+            "3,54"
+          ],
+          "ans": 1,
+          "points": 1.0,
+          "exp": "4/5 = 0,8. Do đó 3 và 4/5 = 3 + 0,8 = 3,8."
+        },
+        {
+          "id": "q3",
+          "q": "Tính: 45,8 + 17,65 = ?",
+          "opts": [
+            "63,45",
+            "62,45",
+            "63,145",
+            "63,85"
+          ],
+          "ans": 0,
+          "points": 1.0,
+          "exp": "45,80 + 17,65 = 63,45."
+        },
+        {
+          "id": "q4",
+          "q": "Một lớp học có 32 học sinh, trong đó có 24 học sinh thích môn Toán. Tỉ số phần trăm của số học sinh thích môn Toán so với cả lớp là:",
+          "opts": [
+            "70%",
+            "72%",
+            "75%",
+            "80%"
+          ],
+          "ans": 2,
+          "points": 1.5,
+          "exp": "Tỉ số phần trăm = 24 ÷ 32 × 100% = 0,75 × 100% = 75%."
+        },
+        {
+          "id": "q5",
+          "q": "Một khu đất hình chữ nhật có chiều dài 80 m, chiều rộng bằng 3/4 chiều dài. Diện tích khu đất đó là:",
+          "opts": [
+            "4 800 m²",
+            "4 200 m²",
+            "280 m²",
+            "2 400 m²"
+          ],
+          "ans": 0,
+          "points": 1.5,
+          "exp": "Chiều rộng = 80 × 3/4 = 60 m. Diện tích = 80 × 60 = 4 800 m²."
+        },
+        {
+          "id": "q6",
+          "q": "Một người đi xe máy trong 2 giờ 15 phút với vận tốc 40 km/h. Quãng đường người đó đi được là:",
+          "opts": [
+            "80 km",
+            "85 km",
+            "90 km",
+            "100 km"
+          ],
+          "ans": 2,
+          "points": 1.5,
+          "exp": "2 giờ 15 phút = 2,25 giờ. Quãng đường s = v × t = 40 × 2,25 = 90 km."
+        },
+        {
+          "id": "q7",
+          "q": "Hình tròn có đường kính d = 6 cm. Diện tích của hình tròn đó là:",
+          "opts": [
+            "18,84 cm²",
+            "28,26 cm²",
+            "113,04 cm²",
+            "36 cm²"
+          ],
+          "ans": 1,
+          "points": 1.5,
+          "exp": "Bán kính r = 6 ÷ 2 = 3 cm. Diện tích S = r × r × 3,14 = 3 × 3 × 3,14 = 28,26 cm²."
+        },
+        {
+          "id": "q8",
+          "q": "Tìm x biết: x × 4,5 = 54",
+          "opts": [
+            "10",
+            "12",
+            "14",
+            "15"
+          ],
+          "ans": 1,
+          "points": 1.0,
+          "exp": "x = 54 ÷ 4,5 = 12."
+        }
+      ]
+    },
+    {
+      "id": "mock-tiengviet-hk1-lop4",
+      "title": "Đề Khảo Sát Tiếng Việt Lớp 4: Luyện Từ & Câu (Học kỳ 1)",
+      "grade": "Lớp 4",
+      "subject": "Tiếng Việt",
+      "time_minutes": 30,
+      "questions": [
+        {
+          "id": "q1",
+          "q": "Từ nào dưới đây là từ ghép tổng hợp?",
+          "opts": [
+            "Bánh rán",
+            "Xe đạp",
+            "Nhà cửa",
+            "Cây bàng"
+          ],
+          "ans": 2,
+          "points": 1.0,
+          "exp": "'Nhà cửa' bao hàm chỉ chung các loại nhà, thuộc từ ghép tổng hợp."
+        },
+        {
+          "id": "q2",
+          "q": "Trong câu: 'Những đóa hoa cúc vàng rực rỡ dưới ánh nắng ban mai', từ nào là tính từ?",
+          "opts": [
+            "Những đóa hoa",
+            "Hoa cúc",
+            "Vàng rực rỡ",
+            "Ánh nắng"
+          ],
+          "ans": 2,
+          "points": 1.0,
+          "exp": "'Vàng rực rỡ' là từ chỉ màu sắc, đặc điểm nên là tính từ."
+        },
+        {
+          "id": "q3",
+          "q": "Câu nào dưới đây sử dụng biện pháp nhân hóa?",
+          "opts": [
+            "Bầu trời mùa thu trong vắt và cao vút.",
+            "Chị gió tinh nghịch lướt qua rặng tre xanh.",
+            "Dòng sông uốn lượn như dải lụa mềm mại.",
+            "Các bạn học sinh đang chăm chỉ học bài."
+          ],
+          "ans": 1,
+          "points": 1.5,
+          "exp": "'Gió' được gọi là 'Chị' và có hành động 'tinh nghịch lướt qua' giống như con người."
+        },
+        {
+          "id": "q4",
+          "q": "Cặp quan hệ từ nào thích hợp điền vào câu: '... trời mưa to ... chúng em vẫn đến lớp đúng giờ'?",
+          "opts": [
+            "Vì ... nên ...",
+            "Tuy ... nhưng ...",
+            "Nếu ... thì ...",
+            "Chẳng những ... mà còn ..."
+          ],
+          "ans": 1,
+          "points": 1.5,
+          "exp": "Câu biểu thị quan hệ tương phản đối lập nên dùng cặp 'Tuy ... nhưng ...'."
+        },
+        {
+          "id": "q5",
+          "q": "Thành ngữ nào dưới đây nói về lòng nhân ái, sự đùm bọc yêu thương con người?",
+          "opts": [
+            "Ăn quả nhớ kẻ trồng cây",
+            "Lá lành đùm lá rách",
+            "Học đi đôi với hành",
+            "Có công mài sắt có ngày nên kim"
+          ],
+          "ans": 1,
+          "points": 1.5,
+          "exp": "'Lá lành đùm lá rách' nói lên tinh thần đoàn kết, sẻ chia với người gặp hoạn nạn."
+        },
+        {
+          "id": "q6",
+          "q": "Dấu hai chấm (:) trong câu sau có tác dụng gì: 'Cô giáo dặn cả lớp: Các em nhớ ôn tập kỹ bài học hôm nay nhé'?",
+          "opts": [
+            "Báo hiệu phần giải thích cho bộ phận đứng trước",
+            "Báo hiệu lời nói trực tiếp của nhân vật",
+            "Dùng để liệt kê các sự vật",
+            "Kết thúc một câu kể"
+          ],
+          "ans": 1,
+          "points": 1.5,
+          "exp": "Dấu hai chấm dẫn lời nói trực tiếp của cô giáo (thường kết hợp với dấu ngoặc kép hoặc gạch đầu dòng)."
+        },
+        {
+          "id": "q7",
+          "q": "Tìm từ đồng nghĩa với từ 'chăm chỉ':",
+          "opts": [
+            "Cần cù",
+            "Thật thà",
+            "Hiền lành",
+            "Dũng cảm"
+          ],
+          "ans": 0,
+          "points": 1.0,
+          "exp": "'Cần cù', 'siêng năng' là các từ đồng nghĩa với 'chăm chỉ'."
+        },
+        {
+          "id": "q8",
+          "q": "Xác định chủ ngữ trong câu: 'Mặt trời từ từ nhô lên sau rặng núi xa xa':",
+          "opts": [
+            "Mặt trời",
+            "Mặt trời từ từ",
+            "Nhô lên",
+            "Rặng núi"
+          ],
+          "ans": 0,
+          "points": 1.0,
+          "exp": "Bộ phận trả lời cho câu hỏi 'Ai?' hoặc 'Cái gì?' là 'Mặt trời'."
+        }
+      ]
+    }
+  ]
+}
